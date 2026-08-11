@@ -1,9 +1,0 @@
-#=====================================================
-#  D A T A   O U T P U T   
-#=====================================================
-/gate/output/tree/enable
-#/gate/output/tree/addFileName ./SPEBT_${SLURM_ARRAY_TASK_ID}.npy
-/gate/output/tree/addFileName ./SPEBT_${SLURM_ARRAY_TASK_ID}.root
-/gate/output/tree/hits/enable
-/gate/output/tree/addCollection Singles
-
