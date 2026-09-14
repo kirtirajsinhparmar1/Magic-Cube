@@ -1,0 +1,40 @@
+# Bounded manual-only Step-5 runtime check.
+# This is a diagnostic harness, not the production source/output/main macro.
+# It reuses the frozen Step-4 geometry and no-system GAGG SD attachment.
+
+/gate/geometry/setMaterialDatabase GateMaterials.db
+/gate/world/geometry/setXLength 200.0 mm
+/gate/world/geometry/setYLength 200.0 mm
+/gate/world/geometry/setZLength 200.0 mm
+/gate/world/setMaterial Air
+
+/control/execute magiccube_geometry.mac
+/control/execute magiccube_runtime_system.mac
+/control/execute magiccube_production_physics.mac
+/gate/run/initialize
+
+# Existing bounded Step-4 external smoke-source convention.
+/control/execute magiccube_production_digitizer.mac
+/gate/source/addSource step5_smoke gps
+/gate/source/step5_smoke/gps/particle gamma
+/gate/source/step5_smoke/gps/pos/type Point
+/gate/source/step5_smoke/gps/pos/centre 0.0 0.0 -66.0 mm
+/gate/source/step5_smoke/gps/ang/type iso
+/gate/source/step5_smoke/gps/ene/type Mono
+/gate/source/step5_smoke/gps/ene/mono 140.0 keV
+/gate/source/step5_smoke/setActivity 20000.0 becquerel
+
+/gate/random/setEngineName MersenneTwister
+/gate/application/setTimeStart 0.0 s
+/gate/application/setTimeStop 1.0 s
+/gate/application/setTimeSlice 1.0 s
+
+# Harness-local Tree output.  The production output.mac is intentionally not
+# executed; the original collection name is retained for this compatibility
+# check.  All four family digitizers feed the common Singles collection name.
+/gate/output/tree/enable
+/gate/output/tree/addFileName /vscratch/grp-rutaoyao/Kirtiraj/Magic Cube/runtime_validation/step5/magiccube_step5_digitizer.root
+/gate/output/tree/hits/enable
+/gate/output/tree/addCollection Singles
+
+/gate/application/startDAQ

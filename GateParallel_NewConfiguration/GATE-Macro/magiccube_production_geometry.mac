@@ -1,0 +1,165 @@
+# Magic-Cube Step-5 production geometry candidate.
+#
+# The centered Air-only wrapper supplies the physical volume hierarchy needed
+# by the cylindricalPET system.  The detector body below the wrapper is an
+# exact copy of magiccube_geometry.mac, with only its immediate parent
+# changed from /gate/world to /gate/block.
+
+/gate/world/daughters/name cylindricalPET
+/gate/world/daughters/insert cylinder
+/gate/cylindricalPET/placement/setTranslation 0.0 0.0 0.0 mm
+/gate/cylindricalPET/geometry/setRmin 0 mm
+/gate/cylindricalPET/geometry/setRmax 55 mm
+/gate/cylindricalPET/geometry/setHeight 42 mm
+/gate/cylindricalPET/setMaterial Air
+/gate/cylindricalPET/vis/setVisible 0
+
+/gate/cylindricalPET/daughters/name panel
+/gate/cylindricalPET/daughters/insert box
+/gate/panel/geometry/setXLength 73.2 mm
+/gate/panel/geometry/setYLength 73.2 mm
+/gate/panel/geometry/setZLength 38.0 mm
+/gate/panel/placement/setTranslation 0.0 0.0 0.0 mm
+/gate/panel/setMaterial Air
+/gate/panel/vis/setVisible 0
+
+/gate/panel/daughters/name module
+/gate/panel/daughters/insert box
+/gate/module/geometry/setXLength 71.2 mm
+/gate/module/geometry/setYLength 71.2 mm
+/gate/module/geometry/setZLength 36.0 mm
+/gate/module/placement/setTranslation 0.0 0.0 0.0 mm
+/gate/module/setMaterial Air
+/gate/module/vis/setVisible 0
+
+/gate/module/daughters/name block
+/gate/module/daughters/insert box
+/gate/block/geometry/setXLength 69.2 mm
+/gate/block/geometry/setYLength 69.2 mm
+/gate/block/geometry/setZLength 34.0 mm
+/gate/block/placement/setTranslation 0.0 0.0 0.0 mm
+/gate/block/setMaterial Air
+/gate/block/vis/setVisible 0
+
+/gate/block/daughters/name magicCubeMother
+/gate/block/daughters/insert box
+/gate/magicCubeMother/geometry/setXLength 67.2 mm
+/gate/magicCubeMother/geometry/setYLength 67.2 mm
+/gate/magicCubeMother/geometry/setZLength 32.0 mm
+/gate/magicCubeMother/setMaterial Air
+/gate/magicCubeMother/placement/setTranslation 0.0 0.0 0.0 mm
+
+# Family translations are frozen first-copy centers.
+# autoCenter false prevents GATE from treating them as repeated-array centers.
+
+/gate/magicCubeMother/daughters/name mc_gagg_ee
+/gate/magicCubeMother/daughters/insert box
+/gate/mc_gagg_ee/geometry/setXLength 2.0 mm
+/gate/mc_gagg_ee/geometry/setYLength 2.0 mm
+/gate/mc_gagg_ee/geometry/setZLength 2.0 mm
+/gate/mc_gagg_ee/setMaterial GAGG
+/gate/mc_gagg_ee/placement/setTranslation -31.5 -31.5 -15.0 mm
+/gate/mc_gagg_ee/repeaters/insert cubicArray
+/gate/mc_gagg_ee/cubicArray/autoCenter false
+/gate/mc_gagg_ee/cubicArray/setRepeatNumberX 8
+/gate/mc_gagg_ee/cubicArray/setRepeatNumberY 8
+/gate/mc_gagg_ee/cubicArray/setRepeatNumberZ 8
+/gate/mc_gagg_ee/cubicArray/setRepeatVector 8.4 8.4 4.0 mm
+
+/gate/magicCubeMother/daughters/name mc_k9_ee
+/gate/magicCubeMother/daughters/insert box
+/gate/mc_k9_ee/geometry/setXLength 2.0 mm
+/gate/mc_k9_ee/geometry/setYLength 2.0 mm
+/gate/mc_k9_ee/geometry/setZLength 2.0 mm
+/gate/mc_k9_ee/setMaterial K9_V1_PROXY
+/gate/mc_k9_ee/placement/setTranslation -31.5 -31.5 -13.0 mm
+/gate/mc_k9_ee/repeaters/insert cubicArray
+/gate/mc_k9_ee/cubicArray/autoCenter false
+/gate/mc_k9_ee/cubicArray/setRepeatNumberX 8
+/gate/mc_k9_ee/cubicArray/setRepeatNumberY 8
+/gate/mc_k9_ee/cubicArray/setRepeatNumberZ 8
+/gate/mc_k9_ee/cubicArray/setRepeatVector 8.4 8.4 4.0 mm
+
+/gate/magicCubeMother/daughters/name mc_gagg_eo
+/gate/magicCubeMother/daughters/insert box
+/gate/mc_gagg_eo/geometry/setXLength 2.0 mm
+/gate/mc_gagg_eo/geometry/setYLength 2.0 mm
+/gate/mc_gagg_eo/geometry/setZLength 2.0 mm
+/gate/mc_gagg_eo/setMaterial GAGG
+/gate/mc_gagg_eo/placement/setTranslation -31.5 -27.3 -13.0 mm
+/gate/mc_gagg_eo/repeaters/insert cubicArray
+/gate/mc_gagg_eo/cubicArray/autoCenter false
+/gate/mc_gagg_eo/cubicArray/setRepeatNumberX 8
+/gate/mc_gagg_eo/cubicArray/setRepeatNumberY 8
+/gate/mc_gagg_eo/cubicArray/setRepeatNumberZ 8
+/gate/mc_gagg_eo/cubicArray/setRepeatVector 8.4 8.4 4.0 mm
+
+/gate/magicCubeMother/daughters/name mc_k9_eo
+/gate/magicCubeMother/daughters/insert box
+/gate/mc_k9_eo/geometry/setXLength 2.0 mm
+/gate/mc_k9_eo/geometry/setYLength 2.0 mm
+/gate/mc_k9_eo/geometry/setZLength 2.0 mm
+/gate/mc_k9_eo/setMaterial K9_V1_PROXY
+/gate/mc_k9_eo/placement/setTranslation -31.5 -27.3 -15.0 mm
+/gate/mc_k9_eo/repeaters/insert cubicArray
+/gate/mc_k9_eo/cubicArray/autoCenter false
+/gate/mc_k9_eo/cubicArray/setRepeatNumberX 8
+/gate/mc_k9_eo/cubicArray/setRepeatNumberY 8
+/gate/mc_k9_eo/cubicArray/setRepeatNumberZ 8
+/gate/mc_k9_eo/cubicArray/setRepeatVector 8.4 8.4 4.0 mm
+
+/gate/magicCubeMother/daughters/name mc_gagg_oe
+/gate/magicCubeMother/daughters/insert box
+/gate/mc_gagg_oe/geometry/setXLength 2.0 mm
+/gate/mc_gagg_oe/geometry/setYLength 2.0 mm
+/gate/mc_gagg_oe/geometry/setZLength 2.0 mm
+/gate/mc_gagg_oe/setMaterial GAGG
+/gate/mc_gagg_oe/placement/setTranslation -27.3 -31.5 -13.0 mm
+/gate/mc_gagg_oe/repeaters/insert cubicArray
+/gate/mc_gagg_oe/cubicArray/autoCenter false
+/gate/mc_gagg_oe/cubicArray/setRepeatNumberX 8
+/gate/mc_gagg_oe/cubicArray/setRepeatNumberY 8
+/gate/mc_gagg_oe/cubicArray/setRepeatNumberZ 8
+/gate/mc_gagg_oe/cubicArray/setRepeatVector 8.4 8.4 4.0 mm
+
+/gate/magicCubeMother/daughters/name mc_k9_oe
+/gate/magicCubeMother/daughters/insert box
+/gate/mc_k9_oe/geometry/setXLength 2.0 mm
+/gate/mc_k9_oe/geometry/setYLength 2.0 mm
+/gate/mc_k9_oe/geometry/setZLength 2.0 mm
+/gate/mc_k9_oe/setMaterial K9_V1_PROXY
+/gate/mc_k9_oe/placement/setTranslation -27.3 -31.5 -15.0 mm
+/gate/mc_k9_oe/repeaters/insert cubicArray
+/gate/mc_k9_oe/cubicArray/autoCenter false
+/gate/mc_k9_oe/cubicArray/setRepeatNumberX 8
+/gate/mc_k9_oe/cubicArray/setRepeatNumberY 8
+/gate/mc_k9_oe/cubicArray/setRepeatNumberZ 8
+/gate/mc_k9_oe/cubicArray/setRepeatVector 8.4 8.4 4.0 mm
+
+/gate/magicCubeMother/daughters/name mc_gagg_oo
+/gate/magicCubeMother/daughters/insert box
+/gate/mc_gagg_oo/geometry/setXLength 2.0 mm
+/gate/mc_gagg_oo/geometry/setYLength 2.0 mm
+/gate/mc_gagg_oo/geometry/setZLength 2.0 mm
+/gate/mc_gagg_oo/setMaterial GAGG
+/gate/mc_gagg_oo/placement/setTranslation -27.3 -27.3 -15.0 mm
+/gate/mc_gagg_oo/repeaters/insert cubicArray
+/gate/mc_gagg_oo/cubicArray/autoCenter false
+/gate/mc_gagg_oo/cubicArray/setRepeatNumberX 8
+/gate/mc_gagg_oo/cubicArray/setRepeatNumberY 8
+/gate/mc_gagg_oo/cubicArray/setRepeatNumberZ 8
+/gate/mc_gagg_oo/cubicArray/setRepeatVector 8.4 8.4 4.0 mm
+
+/gate/magicCubeMother/daughters/name mc_k9_oo
+/gate/magicCubeMother/daughters/insert box
+/gate/mc_k9_oo/geometry/setXLength 2.0 mm
+/gate/mc_k9_oo/geometry/setYLength 2.0 mm
+/gate/mc_k9_oo/geometry/setZLength 2.0 mm
+/gate/mc_k9_oo/setMaterial K9_V1_PROXY
+/gate/mc_k9_oo/placement/setTranslation -27.3 -27.3 -13.0 mm
+/gate/mc_k9_oo/repeaters/insert cubicArray
+/gate/mc_k9_oo/cubicArray/autoCenter false
+/gate/mc_k9_oo/cubicArray/setRepeatNumberX 8
+/gate/mc_k9_oo/cubicArray/setRepeatNumberY 8
+/gate/mc_k9_oo/cubicArray/setRepeatNumberZ 8
+/gate/mc_k9_oo/cubicArray/setRepeatVector 8.4 8.4 4.0 mm

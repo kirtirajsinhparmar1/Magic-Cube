@@ -1,0 +1,171 @@
+{
+  "schema_version": "magiccube-v1-step1",
+  "configuration_name": "Magic-Cube V1",
+  "reference_configuration": "Ref. 29 main Magic-Cube configuration",
+  "coordinate_system": {
+    "origin_mm": {"x": 0.0, "y": 0.0, "z": 0.0},
+    "axes": {"x": "lateral detector direction", "y": "lateral detector direction", "z": "detector depth"},
+    "source_facing_axis": "z",
+    "source_facing_sign": -1,
+    "source_facing_surface_z_mm": -16.0,
+    "rear_surface_z_mm": 16.0,
+    "mother_bounds_mm": {"x": [-33.6, 33.6], "y": [-33.6, 33.6], "z": [-16.0, 16.0]}
+  },
+  "detector": {
+    "mother_size_mm": {"x": 67.2, "y": 67.2, "z": 32.0},
+    "center_mm": {"x": 0.0, "y": 0.0, "z": 0.0},
+    "source_facing_axis": "z",
+    "source_facing_sign": -1,
+    "source_facing_surface_z_mm": -16.0,
+    "rear_surface_z_mm": 16.0,
+    "outer_material_edge_mm": {"x_min": -32.5, "x_max": 32.5, "y_min": -32.5, "y_max": 32.5},
+    "nominal_outer_margin_mm": 1.1
+  },
+  "lattice": {
+    "nx": 16,
+    "ny": 16,
+    "nz": 16,
+    "pitch_x_mm": 4.2,
+    "pitch_y_mm": 4.2,
+    "segment_size_x_mm": 2.0,
+    "segment_size_y_mm": 2.0,
+    "segment_size_z_mm": 2.0,
+    "nominal_lateral_gap_mm": 2.2,
+    "depth_segments_touch": true,
+    "lateral_gap_material": "Air",
+    "source_region_material": "Air"
+  },
+  "material_pattern": {
+    "rule": "(ix + iy + k) % 2",
+    "gagg_when_remainder": 0,
+    "k9_when_remainder": 1,
+    "gagg_condition": "(ix + iy + k) % 2 == 0",
+    "k9_condition": "(ix + iy + k) % 2 == 1",
+    "origin_material": "GAGG",
+    "parity_status": "FROZEN_V1_IMPLEMENTATION_CONVENTION"
+  },
+  "counts": {
+    "total_lattice_positions": 4096,
+    "gagg_elements": 2048,
+    "k9_elements": 2048,
+    "bars": 256,
+    "gagg_per_layer": 128,
+    "k9_per_layer": 128,
+    "gagg_per_bar": 8,
+    "k9_per_bar": 8
+  },
+  "indexing": {
+    "ix_range": [0, 15],
+    "iy_range": [0, 15],
+    "k_range": [0, 15],
+    "d_range": [0, 7],
+    "ix_semantics": "lateral x index; varies fastest in detector_id",
+    "iy_semantics": "lateral y index; varies after ix in detector_id",
+    "k_semantics": "physical material-layer index",
+    "d_semantics": "active GAGG depth index; varies slowest in detector_id",
+    "p_semantics": "lateral-bar parity",
+    "x_mm": "(ix - 7.5) * 4.2",
+    "y_mm": "(iy - 7.5) * 4.2",
+    "z_mm": "(k - 7.5) * 2.0",
+    "parity": "(ix + iy) % 2",
+    "gagg_physical_layer_k": "2 * d + ((ix + iy) % 2)",
+    "lattice_linear_index": "k * 256 + iy * 16 + ix",
+    "detector_id": "d * 256 + iy * 16 + ix",
+    "lattice_linear_index_scope": "all 4096 GAGG/K9 lattice positions",
+    "detector_id_scope": "only the 2048 active GAGG positions",
+    "gate_copy_id_mapping": "DEFERRED_TO_LATER_RUNTIME_VALIDATION"
+  },
+  "materials": {
+    "gagg": {
+      "conceptual_material": "GAGG",
+      "gate_material_name": "GAGG",
+      "role": "sensitive_active_material",
+      "definition_status": "EXISTING_LOCAL_DEFINITION",
+      "density_g_cm3": 6.63,
+      "paper_density_g_cm3_approx": 6.6,
+      "paper_mu_140kev_cm_inv_approx": 4.7,
+      "quantitative_material_validation_status": "NOT_YET_RUN"
+    },
+    "k9": {
+      "conceptual_material": "K9",
+      "gate_material_name": "K9_V1_PROXY",
+      "role": "passive_light_guide_gamma_transport_material",
+      "definition_status": "PROVISIONAL_V1_PROXY",
+      "source_material_definition": "existing GateMaterials.db Glass",
+      "source_gate_material_name": "Glass",
+      "density_g_cm3": 2.5,
+      "exact_paper_composition_known": false,
+      "exact_author_verified": false,
+      "paper_density_g_cm3_approx": 2.5,
+      "paper_mu_140kev_cm_inv_approx": 0.4,
+      "quantitative_material_validation_status": "NOT_YET_RUN",
+      "valid_for": [
+        "initial V1 geometry and physics-development tests"
+      ],
+      "not_validated_for": [
+        "paper-level quantitative matching"
+      ]
+    },
+    "air": {
+      "conceptual_material": "Air",
+      "gate_material_name": "Air",
+      "role": "mother_gap_and_source_region",
+      "definition_status": "EXISTING_LOCAL_DEFINITION"
+    }
+  },
+  "future_source": {
+    "isotope": "Tc-99m",
+    "nominal_gamma_energy_keV": 140.0,
+    "finite_source_diameter_mm": 0.7,
+    "finite_source_radius_mm": 0.35,
+    "emission": "isotropic",
+    "fov_size_mm": {"x": 100.0, "y": 100.0},
+    "fov_plane_orientation": "parallel to detector x-y face",
+    "distance_from_source_facing_surface_mm": 50.0,
+    "fov_plane_z_mm": -66.0,
+    "coarse_spacing_mm": {"x": 2.0, "y": 2.0},
+    "expected_coarse_grid_shape": [50, 50],
+    "expected_coarse_source_locations": 2500,
+    "final_reconstruction_grid_spacing_mm": 1.0,
+    "future_energy_window_keV": [112.0, 168.0],
+    "exact_grid_endpoints_status": "DEFERRED_TO_SOURCE_MAP_STEP",
+    "implementation_status": "RECORDED_NON_IMPLEMENTED_INTERFACE"
+  },
+  "future_system_matrix": {
+    "paper_definition": "c_ij = n_ij / (T_j * A_j)",
+    "raw_count_quantity": "raw_count_ij",
+    "probability_quantity": "P_ij = raw_count_ij / N_emitted_j",
+    "detector_dimension": 2048,
+    "normalization_policy": "Preserve raw/absolute response; do not normalize each detector over source positions",
+    "legacy_pipeline_warning": "Legacy detector-wise normalization must not define the Magic-Cube system matrix",
+    "implementation_status": "RECORDED_NON_IMPLEMENTED_INTERFACE"
+  },
+  "v1_exclusions": [
+    "mechanical tungsten or lead plate/collimator",
+    "BaSO4 reflector",
+    "SiPM boards and optical coupling",
+    "ASIC, ADC, FPGA, electronics, and readout chains",
+    "detector housing",
+    "optical-photon transport and optical readout",
+    "Low-Energy, Broad-Energy, Telephoto-Lens, and other alternate Magic-Cube configurations"
+  ],
+  "deferred": [
+    "Exact K9 elemental composition; Step 2 records only the provisional K9_V1_PROXY, so exact composition remains unresolved",
+    "Actual GATE logical-volume hierarchy; resolve during geometry/system implementation",
+    "GATE copy-number/hierarchy-ID to canonical detector_id mapping; validate during detector implementation",
+    "Sensitive-detector attachment method; resolve in the system implementation step",
+    "GATE, Geant4, and ROOT module/runtime environment; resolve in runtime-readiness work",
+    "Writable production output path; resolve in pipeline/runtime work",
+    "Exact coarse source-grid endpoints; resolve in the source-map step",
+    "Explicit random-seed formula; resolve in simulation orchestration",
+    "Full event-selection logic; resolve in digitizer/physics work",
+    "Energy-resolution implementation; resolve in the digitizer step",
+    "112–168 keV energy framing implementation; resolve in the digitizer step",
+    "MLEM/reconstruction; resolve much later",
+    "BaSO4 reflector; intentionally ignored for V1",
+    "SiPM, PCB, electronics, and housing; intentionally ignored for V1",
+    "Full optical simulation; intentionally ignored",
+    "Exact experimental checkerboard orientation; not required because the V1 parity convention is frozen",
+    "Alternative Magic-Cube configurations; not part of V1"
+  ]
+}

@@ -1,0 +1,38 @@
+# Magic-Cube visualization-only export: GAGG-only view.
+# This macro uses the same frozen geometry and hides only the K9 families.
+
+/gate/geometry/setMaterialDatabase GateMaterials.db
+/gate/world/geometry/setXLength 200.0 mm
+/gate/world/geometry/setYLength 200.0 mm
+/gate/world/geometry/setZLength 200.0 mm
+/gate/world/setMaterial Air
+/control/execute magiccube_geometry.mac
+
+# Keep the active GAGG families solid and visible.
+/gate/world/vis/setVisible 0
+/gate/magicCubeMother/vis/setVisible 0
+/gate/mc_gagg_ee/vis/setColor red
+/gate/mc_gagg_ee/vis/forceSolid
+/gate/mc_gagg_ee/vis/setVisible 1
+/gate/mc_gagg_eo/vis/setColor red
+/gate/mc_gagg_eo/vis/forceSolid
+/gate/mc_gagg_eo/vis/setVisible 1
+/gate/mc_gagg_oe/vis/setColor red
+/gate/mc_gagg_oe/vis/forceSolid
+/gate/mc_gagg_oe/vis/setVisible 1
+/gate/mc_gagg_oo/vis/setColor red
+/gate/mc_gagg_oo/vis/forceSolid
+/gate/mc_gagg_oo/vis/setVisible 1
+
+# Hide all passive K9 families for the active-lattice view.
+/gate/mc_k9_ee/vis/setVisible 0
+/gate/mc_k9_eo/vis/setVisible 0
+/gate/mc_k9_oe/vis/setVisible 0
+/gate/mc_k9_oo/vis/setVisible 0
+
+/gate/run/initialize
+/vis/open VRML2FILE
+/vis/viewer/set/viewpointThetaPhi 60 60
+/vis/viewer/zoom 1.5
+/vis/drawVolume
+/vis/viewer/flush

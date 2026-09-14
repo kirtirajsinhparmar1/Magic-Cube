@@ -1,0 +1,9 @@
+# Magic-Cube V1 Step-4 geometry-only runtime check.
+# This diagnostic world is not a scientific detector parameter.
+/gate/geometry/setMaterialDatabase GateMaterials.db
+/gate/world/geometry/setXLength 200.0 mm
+/gate/world/geometry/setYLength 200.0 mm
+/gate/world/geometry/setZLength 200.0 mm
+/gate/world/setMaterial Air
+/control/execute magiccube_geometry.mac
+/gate/run/initialize

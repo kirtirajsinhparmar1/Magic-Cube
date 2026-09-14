@@ -1,0 +1,6 @@
+# Magic-Cube V1 Step-4 raw-hit sensitive-detector attachment.
+# K9_V1_PROXY and Air intentionally remain passive.
+/gate/mc_gagg_ee/attachCrystalSDnoSystem
+/gate/mc_gagg_eo/attachCrystalSDnoSystem
+/gate/mc_gagg_oe/attachCrystalSDnoSystem
+/gate/mc_gagg_oo/attachCrystalSDnoSystem

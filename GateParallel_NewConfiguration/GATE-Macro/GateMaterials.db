@@ -164,6 +164,12 @@ Glass: d=2.5 g/cm3; n=4;  state=solid
         +el: name=Silicon    ; f=0.2480
         +el: name=Oxygen     ; f=0.5990
 
+K9_V1_PROXY: d=2.5 g/cm3; n=4; state=solid
+        +el: name=Sodium     ; f=0.1020
+        +el: name=Calcium    ; f=0.0510
+        +el: name=Silicon    ; f=0.2480
+        +el: name=Oxygen     ; f=0.5990
+
 Scinti-C9H10: d=1.032 g/cm3 ; n=2
         +el: name=Carbon     ; n=9
         +el: name=Hydrogen   ; n=10
