@@ -1,0 +1,2 @@
+source_id,ix,iy,x_mm,y_mm,z_mm,activity_Bq,acquisition_time_s,particle,energy_keV,source_model,angular_distribution,reported_nominal_source_size_mm
+0,0,0,0,0,-66,3700000.0,1.0,gamma,140.0,Point,isotropic,0.7

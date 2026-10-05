@@ -1,0 +1,2 @@
+# Compatibility entry point. Runtime tasks use the rendered main.mac in their staged task directory.
+/control/execute main.mac

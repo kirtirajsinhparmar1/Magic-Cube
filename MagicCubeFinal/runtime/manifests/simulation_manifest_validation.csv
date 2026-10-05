@@ -1,0 +1,2 @@
+task_id,source_id,replicate_id,x_mm,y_mm,z_mm,activity_bq,acquisition_s,seed,expected_emitted_photons
+0,0,0,0,0,-66,3700000.0,1.0,1000001,3700000.0

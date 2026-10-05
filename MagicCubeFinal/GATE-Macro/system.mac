@@ -1,0 +1,17 @@
+# Magic-Cube Step-5 production-system candidate.
+#
+# This is the single centered cylindricalPET wrapper candidate.  The
+# corresponding production geometry creates actual panel, module, block, and
+# magicCubeMother volumes before this system macro is executed.
+
+/gate/systems/cylindricalPET/rsector/attach panel
+/gate/systems/cylindricalPET/module/attach module
+/gate/systems/cylindricalPET/submodule/attach block
+/gate/systems/cylindricalPET/crystal/attach magicCubeMother
+
+/gate/mc_gagg_ee/attachCrystalSD
+/gate/mc_gagg_eo/attachCrystalSD
+/gate/mc_gagg_oe/attachCrystalSD
+/gate/mc_gagg_oo/attachCrystalSD
+
+/gate/systems/cylindricalPET/describe

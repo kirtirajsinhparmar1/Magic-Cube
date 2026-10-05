@@ -1,0 +1,33 @@
+# Local OMX/session state and Python caches.
+.omx/
+__pycache__/
+*.py[cod]
+
+# Runtime products are reproducible and may contain large simulation data.
+runtime/sim/*
+!runtime/sim/.gitkeep
+runtime/logs/*
+!runtime/logs/.gitkeep
+runtime/generated_macros/*
+!runtime/generated_macros/.gitkeep
+runtime/merged/*
+!runtime/merged/.gitkeep
+runtime/reduced/*
+!runtime/reduced/.gitkeep
+
+# Generated numeric products and plots are not source architecture.
+results/ppdf/*
+!results/ppdf/.gitkeep
+results/system_matrix/*
+!results/system_matrix/.gitkeep
+results/plots/*
+!results/plots/.gitkeep
+results/validation/*
+!results/validation/.gitkeep
+
+# Presentation exports are derived artifacts; retain source documentation only.
+meeting_slides/*.pptx
+meeting_slides/figures/
+meeting_slides/slides/
+meeting_slides/__pycache__/
+meeting_visualizations/wrl/*.wrl

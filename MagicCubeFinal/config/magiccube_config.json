@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "geometry_status": "frozen",
+  "detector": {"mother_size_mm": {"x": 67.2, "y": 67.2, "z": 32.0}, "center_mm": [0, 0, 0], "front_surface_z_mm": -16.0},
+  "lattice": {"nx": 16, "ny": 16, "nz": 16, "pitch_x_mm": 4.2, "pitch_y_mm": 4.2, "pitch_z_mm": 2.0, "segment_size_x_mm": 2.0, "segment_size_y_mm": 2.0, "segment_size_z_mm": 2.0},
+  "counts": {"total_lattice_positions": 4096, "gagg_elements": 2048, "k9_elements": 2048},
+  "material_pattern": {"rule": "(ix + iy + k) % 2", "gagg_when_remainder": 0, "k9_when_remainder": 1},
+  "materials": {"gagg": {"gate_material_name": "GAGG", "sensitive": true}, "k9": {"gate_material_name": "K9_V1_PROXY", "sensitive": false, "caveat": "provisional glass proxy, not an optical model"}, "air": {"gate_material_name": "Air", "sensitive": false}},
+  "indexing": {"detector_id": "d * 256 + iy * 16 + ix", "physical_layer_k": "2 * d + ((ix + iy) % 2)", "ordering": "d then iy then ix, x fastest", "detector_id_min": 0, "detector_id_max": 2047, "runtime_mapping": "family and volume copy IDs must be checked against physical positions"},
+  "source": {"particle": "gamma", "energy_keV": 140.0, "type": "Point", "angular_distribution": "iso", "activity_Bq": 3700000.0, "acquisition_time_s": 1.0, "validation_source_id": 0, "validation_position_mm": [0, 0, -66], "front_surface_distance_mm": 50.0},
+  "physics": {"process": "PhotoElectric", "model": "StandardModel", "production_cut_cm": 1.0},
+  "digitizer": {"modules": ["adder", "energyResolution", "spatialResolution", "energyFraming"], "energy_resolution_fwhm": 0.10, "reference_energy_keV": 140.0, "spatial_resolution_fwhm_mm": 1.0, "confine_inside_smallest_element": true, "energy_window_keV": [120.0, 160.0]},
+  "output": {"format": "ROOT tree", "hits": true, "singles_families": ["mc_gagg_ee", "mc_gagg_eo", "mc_gagg_oe", "mc_gagg_oo"]},
+  "paper_validation": {"reported_average_sensitivity_cps_per_MBq": 5916, "use": "future comparison target only; never tune to force agreement"}
+}

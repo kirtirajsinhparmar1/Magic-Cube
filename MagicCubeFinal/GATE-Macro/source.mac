@@ -1,0 +1,10 @@
+# Point-source template; activity and position come from the manifest/config.
+/gate/source/addSource source1
+/gate/source/source1/gps/particle gamma
+/gate/source/source1/gps/energytype Mono
+/gate/source/source1/gps/monoenergy @ENERGY_KEV@ keV
+/gate/source/source1/setActivity @ACTIVITY_BQ@ Bq
+/gate/source/source1/gps/type Point
+/gate/source/source1/gps/centre @X_MM@ @Y_MM@ @Z_MM@ mm
+/gate/source/source1/gps/angtype iso
+/gate/source/list

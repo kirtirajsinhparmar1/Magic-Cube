@@ -1,0 +1,12 @@
+{
+  "recorded_at_phase1": "2026-09-26",
+  "scope": "bounded critical OneCube reference files",
+  "files": {
+    "OneCube/GATE-Macro/geometry.mac": "9ba8540a9b70430d60c439fc9136560d4d21e42157e905288bcd41c767962832",
+    "OneCube/GATE-Macro/system.mac": "3c7eb224d9cd9a4b6d364108b849bfda7818a7fa2f6c4f9dd79a0a03d2d90d4d",
+    "OneCube/GATE-Macro/digitizer.mac": "d4ae8a740ad183321cc28bb29cc9cbe4e943bbb41e238aef433151f27c8a76f9",
+    "OneCube/GATE-Macro/source.mac": "8a53ea3c329f1a57425e8842be35adf4b5d9cc31a3ee70f83f89ed7fe56bec3c",
+    "OneCube/GATE-Macro/output.mac": "b29535c4af5233fe8f0159b9e6dcc8e8cd96a62b984084e986f877d3c133ba37"
+  },
+  "note": "The initial git status already contained untracked OneCube and GateParallel research artifacts; this build did not create or modify them."
+}

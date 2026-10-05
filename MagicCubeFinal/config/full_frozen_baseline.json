@@ -1,0 +1,15 @@
+{
+  "purpose": "Recorded before full-production edits; frozen validated detector and one-source launcher regression guard.",
+  "files": {
+    "GATE-Macro/geometry.mac": "3adf6843a7198889a4bc6ce07809fcf071af62111e1dfbb1e3535c29e8a880be",
+    "GATE-Macro/system.mac": "319019484bf798b7f294cc3ccb756d3e5c8c98b8cc013289b2e83a8c21e3fb76",
+    "GATE-Macro/physics.mac": "c56fc7e98a906d7a89e538e794456cf81f174d75078256dc55beaf72118a5df3",
+    "GATE-Macro/digitizer.mac": "0898615b116d441c18fdf2b3a27eff2f9509acc24dbd2375fe07ad0a07453133",
+    "GATE-Macro/source.mac": "dc4527b96049f69513b76a5ccb4c5055ecb496c70f7310fe482bac481ee12bd0",
+    "GATE-Macro/output.mac": "4bcd68a3addefb18749481e873625c9429ea86c2731a19b6723e93ad6bd656ce",
+    "GATE-Macro/GateMaterials.db": "c04d617d977f0257a53ce3b51ed39501a7fe6096b16305b76d9832324a173a89",
+    "config/detector_map.csv": "938327ba1082e854fb9221b52450bde1bf46c4be0f870e3708b966227b07a031",
+    "config/detector_map.parquet": "0355da306b1669588495f674f09202eb7b446c62ab0cbbb149f63087a48f0ffd",
+    "slurm/par_validation.sh": "005e134402a3cb9c52fa98d52fc18974bdad0e647fac8a6e0dfb2ad5cfce1d04"
+  }
+}

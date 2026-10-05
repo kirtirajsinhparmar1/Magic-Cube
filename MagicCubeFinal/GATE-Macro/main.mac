@@ -1,0 +1,16 @@
+# Render with scripts/render_gate_macro.py before running GATE.
+/gate/geometry/setMaterialDatabase @MACRO_DIR@/GateMaterials.db
+/control/execute @MACRO_DIR@/geometry.mac
+/control/execute @MACRO_DIR@/plate.mac
+/control/execute @MACRO_DIR@/system.mac
+/control/execute @MACRO_DIR@/physics.mac
+/gate/run/initialize
+/control/execute @MACRO_DIR@/digitizer.mac
+/control/execute @RUN_DIR@/source.mac
+/gate/random/setEngineName MersenneTwister
+/gate/random/setEngineSeed @SEED@
+/gate/application/setTimeStart 0. s
+/gate/application/setTimeStop @ACQUISITION_TIME_S@ s
+/control/execute @MACRO_DIR@/verbose.mac
+/control/execute @RUN_DIR@/output.mac
+/gate/application/startDAQ
