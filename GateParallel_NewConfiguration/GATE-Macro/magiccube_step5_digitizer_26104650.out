@@ -1,0 +1,18 @@
+GATE:
+- exit code: 0
+- GateSpatialResolution mentioned: NO
+- corresponding-system failure: NO
+- fatal/error patterns: 0
+ROOT files:
+  SINGLES magiccube_step5_digitizer.Singles_mc_gagg_ee.root :: tree entries=254
+  SINGLES magiccube_step5_digitizer.Singles_mc_gagg_eo.root :: tree entries=239
+  SINGLES magiccube_step5_digitizer.Singles_mc_gagg_oe.root :: tree entries=230
+  SINGLES magiccube_step5_digitizer.Singles_mc_gagg_oo.root :: tree entries=258
+  HITS magiccube_step5_digitizer.hits_mc_gagg_ee.root :: tree entries=254
+  HITS magiccube_step5_digitizer.hits_mc_gagg_eo.root :: tree entries=239
+  HITS magiccube_step5_digitizer.hits_mc_gagg_oe.root :: tree entries=230
+  HITS magiccube_step5_digitizer.hits_mc_gagg_oo.root :: tree entries=258
+Total Hits entries: 981
+Total Singles entries: 981
+POSITION MAPPING: NOT PERFORMED — optional for this test; POSITION_DERIVED_REQUIRED remains frozen
+FINAL CLASSIFICATION: DIGITIZER_RUNTIME_VALIDATED

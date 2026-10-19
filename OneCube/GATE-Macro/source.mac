@@ -1,0 +1,11 @@
+# One centered isotropic point source at the requested source-facing distance.
+/gate/source/addSource source1
+/gate/source/source1/gps/particle gamma
+/gate/source/source1/gps/pos/type Point
+/gate/source/source1/gps/pos/centre 0 0 -51 mm
+/gate/source/source1/gps/ang/type iso
+/gate/source/source1/gps/ene/type Mono
+/gate/source/source1/gps/ene/mono 140 keV
+/gate/source/source1/setActivity 0.0001 Ci
+
+/gate/source/list

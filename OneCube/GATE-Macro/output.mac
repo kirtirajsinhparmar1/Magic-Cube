@@ -1,0 +1,6 @@
+# GATE ROOT Tree output. GATE appends the Hits and Singles collection names
+# to the base file name when it materializes collection-specific files.
+/gate/output/tree/enable
+/gate/output/tree/addFileName /vscratch/grp-rutaoyao/Kirtiraj/Magic Cube/mcsim/OneCube/runtime/sim/onecube.root
+/gate/output/tree/hits/enable
+/gate/output/tree/addCollection Singles

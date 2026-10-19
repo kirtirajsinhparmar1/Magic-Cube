@@ -1,0 +1,62 @@
+{
+  "detector": {
+    "count": 1,
+    "detector_id": 0,
+    "name": "onecube_crystal",
+    "material": "GAGG",
+    "x_mm": 0.0,
+    "y_mm": 0.0,
+    "z_mm": 0.0,
+    "size_x_mm": 2.0,
+    "size_y_mm": 2.0,
+    "size_z_mm": 2.0
+  },
+  "source": {
+    "source_count": 1,
+    "source_id": 0,
+    "particle": "gamma",
+    "energy_keV": 140.0,
+    "x_mm": 0.0,
+    "y_mm": 0.0,
+    "z_mm": -51.0,
+    "position_type": "Point",
+    "activity_Ci": 0.0001,
+    "activity_Bq": 3700000.0,
+    "angular_type": "isotropic",
+    "surface_distance_mm": 50.0
+  },
+  "acquisition": {
+    "start_s": 0.0,
+    "stop_s": 1.0,
+    "duration_s": 1.0,
+    "time_slice_s": 1.0
+  },
+  "digitizer": {
+    "energy_resolution_fwhm": 0.10,
+    "reference_energy_keV": 140.0,
+    "spatial_resolution_fwhm_mm": 1.0,
+    "spatial_confine": true,
+    "energy_window_min_keV": 120.0,
+    "energy_window_max_keV": 160.0
+  },
+  "physics": {
+    "reference": "original_mcsim",
+    "photoelectric": true,
+    "model": "StandardModel",
+    "compton": false,
+    "rayleigh": false,
+    "production_cut_gamma_cm": 1.0,
+    "production_cut_electron_cm": 1.0,
+    "production_cut_positron_cm": 1.0
+  },
+  "output": {
+    "detector_count": 1,
+    "detector_ids": [0],
+    "base_path": "/vscratch/grp-rutaoyao/Kirtiraj/Magic Cube/mcsim/OneCube/runtime/sim/onecube.root",
+    "singles_collection": "Singles"
+  },
+  "pipeline": {
+    "version": 1,
+    "mode": "onecube_end_to_end_validation"
+  }
+}

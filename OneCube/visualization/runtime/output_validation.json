@@ -1,0 +1,22 @@
+{
+  "checks": {
+    "PNG:cube_intensity_3d.png": true,
+    "PNG:cube_intensity_xy.png": true,
+    "PNG:cube_intensity_xz.png": true,
+    "PNG:cube_intensity_yz.png": true,
+    "PNG:detector_render.png": true,
+    "PNG:geometry_overview.png": true,
+    "PNG:hits_3d.png": true,
+    "PNG:hits_projection_xy.png": true,
+    "PNG:hits_projection_xz.png": true,
+    "PNG:hits_projection_yz.png": true,
+    "PNG:response_dashboard.png": true,
+    "PNG:singles_summary.png": true,
+    "PNG:time_energy_summaries.png": true,
+    "ROOT:hits_entries": true,
+    "ROOT:singles_entries": true
+  },
+  "failures": [],
+  "report_required": true,
+  "status": "PASS"
+}

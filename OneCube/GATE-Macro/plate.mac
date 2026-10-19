@@ -1,0 +1,5 @@
+# OneCube compatibility stage: intentionally no physical plate.
+#
+# The original mcsim execution chain has a plate stage. OneCube preserves
+# that architectural stage but intentionally contains no physical plate
+# because this detector test has no mechanical collimator.

@@ -1,0 +1,126 @@
+{
+  "status": "SOFTWARE PIPELINE READY",
+  "software_pipeline_ready": true,
+  "scientific_reconstruction_identifiable": false,
+  "matrix_rank": 1,
+  "measurement_bins": 1,
+  "spatial_voxels": 1,
+  "distinct_angular_bins": 1,
+  "additional_acquisition_needed": [
+    "need at least 2 spatial source voxels; have 1",
+    "need at least 2 distinct measured angular bins; have 1"
+  ],
+  "checks": [
+    {
+      "name": "source_image_ordering",
+      "passed": true,
+      "details": "source ids follow matrix columns; source count=1"
+    },
+    {
+      "name": "system_matrix_dimensions",
+      "passed": true,
+      "details": "rate=(1, 1), projection=(1, 1), raw=(1, 1)"
+    },
+    {
+      "name": "finite_nonnegative_response",
+      "passed": true,
+      "details": "rate, count operator, and preserved calibration counts are finite and nonnegative"
+    },
+    {
+      "name": "matrix_orientation_and_units",
+      "passed": true,
+      "details": "A[i,j]: i=measurement/detector/acquisition bin; j=image/source voxel; measurement, detector, and view row maps are distinct"
+    },
+    {
+      "name": "sensitivity_dimensions",
+      "passed": true,
+      "details": "shape=(1,)"
+    },
+    {
+      "name": "sensitivity_finite_nonnegative",
+      "passed": true,
+      "details": "sensitivity vector finite and nonnegative"
+    },
+    {
+      "name": "sensitivity_summary",
+      "passed": true,
+      "details": "central, mean, minimum, and maximum are recorded"
+    },
+    {
+      "name": "response_masks",
+      "passed": true,
+      "details": "mask shape=(1, 1); threshold=0.01"
+    },
+    {
+      "name": "fwhm_validity_flags",
+      "passed": true,
+      "details": "0 valid of 1; invalid profiles retain reasons"
+    },
+    {
+      "name": "asci_dimensions_range",
+      "passed": true,
+      "details": "occupancy=(1, 360), fraction=(1,), range=[0,1]"
+    },
+    {
+      "name": "asci_provenance",
+      "passed": true,
+      "details": "ASCI records derived view angles and configured angular bins"
+    },
+    {
+      "name": "ji_definedness",
+      "passed": true,
+      "details": "JI is numeric only when valid FWHM exists; otherwise explicit reason is recorded"
+    },
+    {
+      "name": "phantom_dimensions_ordering",
+      "passed": true,
+      "details": "shape=(1,), image=(1, 1, 1)"
+    },
+    {
+      "name": "forward_projection",
+      "passed": true,
+      "details": "expected/noisy shape=(1,); equation y_expected = A_counts @ x_true"
+    },
+    {
+      "name": "reconstruction_dimensions_nonnegative",
+      "passed": true,
+      "details": "reconstruction size=1; voxel count=1"
+    },
+    {
+      "name": "mlem_convergence_history",
+      "passed": true,
+      "details": "history=40 iterations; stored estimates=(41, 1)"
+    },
+    {
+      "name": "mlem_configuration_and_finiteness",
+      "passed": true,
+      "details": "configured iterations, epsilon, stabilization, and all iterate vectors are stored"
+    },
+    {
+      "name": "reconstruction_plots_exist",
+      "passed": true,
+      "details": "13 plot artifacts recorded"
+    },
+    {
+      "name": "quantitative_outputs",
+      "passed": true,
+      "details": "defined error and activity metrics are finite; undefined correlation remains null"
+    },
+    {
+      "name": "provenance_configuration_recorded",
+      "passed": true,
+      "details": "input artifact paths and complete effective configuration are recorded"
+    },
+    {
+      "name": "generic_algorithm_smoke",
+      "passed": true,
+      "details": "independent 2-voxel identity response forward-projects and MLEM-recovers known values"
+    },
+    {
+      "name": "scientific_reconstruction_identifiability",
+      "passed": false,
+      "details": "rank=1, measurements=1, voxels=1, occupied_angles=1; need at least 2 spatial source voxels; have 1; need at least 2 distinct measured angular bins; have 1"
+    }
+  ],
+  "final_token": "ONECUBE_IMAGING_PIPELINE_READY_RECONSTRUCTION_ACQUISITION_REQUIRED"
+}

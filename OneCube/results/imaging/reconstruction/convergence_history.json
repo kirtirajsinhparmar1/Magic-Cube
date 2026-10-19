@@ -1,0 +1,282 @@
+[
+  {
+    "iteration": 1,
+    "relative_change": 3842917.454935622,
+    "activity_sum_bq": 3842918.454935622,
+    "predicted_count_sum": 241.99999999999997,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 2,
+    "relative_change": 1.2117386636442178e-16,
+    "activity_sum_bq": 3842918.4549356224,
+    "predicted_count_sum": 242.00000000000003,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 3,
+    "relative_change": 1.2117386636442176e-16,
+    "activity_sum_bq": 3842918.454935622,
+    "predicted_count_sum": 241.99999999999997,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 4,
+    "relative_change": 1.2117386636442178e-16,
+    "activity_sum_bq": 3842918.4549356224,
+    "predicted_count_sum": 242.00000000000003,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 5,
+    "relative_change": 1.2117386636442176e-16,
+    "activity_sum_bq": 3842918.454935622,
+    "predicted_count_sum": 241.99999999999997,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 6,
+    "relative_change": 1.2117386636442178e-16,
+    "activity_sum_bq": 3842918.4549356224,
+    "predicted_count_sum": 242.00000000000003,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 7,
+    "relative_change": 1.2117386636442176e-16,
+    "activity_sum_bq": 3842918.454935622,
+    "predicted_count_sum": 241.99999999999997,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 8,
+    "relative_change": 1.2117386636442178e-16,
+    "activity_sum_bq": 3842918.4549356224,
+    "predicted_count_sum": 242.00000000000003,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 9,
+    "relative_change": 1.2117386636442176e-16,
+    "activity_sum_bq": 3842918.454935622,
+    "predicted_count_sum": 241.99999999999997,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 10,
+    "relative_change": 1.2117386636442178e-16,
+    "activity_sum_bq": 3842918.4549356224,
+    "predicted_count_sum": 242.00000000000003,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 11,
+    "relative_change": 1.2117386636442176e-16,
+    "activity_sum_bq": 3842918.454935622,
+    "predicted_count_sum": 241.99999999999997,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 12,
+    "relative_change": 1.2117386636442178e-16,
+    "activity_sum_bq": 3842918.4549356224,
+    "predicted_count_sum": 242.00000000000003,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 13,
+    "relative_change": 1.2117386636442176e-16,
+    "activity_sum_bq": 3842918.454935622,
+    "predicted_count_sum": 241.99999999999997,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 14,
+    "relative_change": 1.2117386636442178e-16,
+    "activity_sum_bq": 3842918.4549356224,
+    "predicted_count_sum": 242.00000000000003,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 15,
+    "relative_change": 1.2117386636442176e-16,
+    "activity_sum_bq": 3842918.454935622,
+    "predicted_count_sum": 241.99999999999997,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 16,
+    "relative_change": 1.2117386636442178e-16,
+    "activity_sum_bq": 3842918.4549356224,
+    "predicted_count_sum": 242.00000000000003,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 17,
+    "relative_change": 1.2117386636442176e-16,
+    "activity_sum_bq": 3842918.454935622,
+    "predicted_count_sum": 241.99999999999997,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 18,
+    "relative_change": 1.2117386636442178e-16,
+    "activity_sum_bq": 3842918.4549356224,
+    "predicted_count_sum": 242.00000000000003,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 19,
+    "relative_change": 1.2117386636442176e-16,
+    "activity_sum_bq": 3842918.454935622,
+    "predicted_count_sum": 241.99999999999997,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 20,
+    "relative_change": 1.2117386636442178e-16,
+    "activity_sum_bq": 3842918.4549356224,
+    "predicted_count_sum": 242.00000000000003,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 21,
+    "relative_change": 1.2117386636442176e-16,
+    "activity_sum_bq": 3842918.454935622,
+    "predicted_count_sum": 241.99999999999997,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 22,
+    "relative_change": 1.2117386636442178e-16,
+    "activity_sum_bq": 3842918.4549356224,
+    "predicted_count_sum": 242.00000000000003,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 23,
+    "relative_change": 1.2117386636442176e-16,
+    "activity_sum_bq": 3842918.454935622,
+    "predicted_count_sum": 241.99999999999997,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 24,
+    "relative_change": 1.2117386636442178e-16,
+    "activity_sum_bq": 3842918.4549356224,
+    "predicted_count_sum": 242.00000000000003,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 25,
+    "relative_change": 1.2117386636442176e-16,
+    "activity_sum_bq": 3842918.454935622,
+    "predicted_count_sum": 241.99999999999997,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 26,
+    "relative_change": 1.2117386636442178e-16,
+    "activity_sum_bq": 3842918.4549356224,
+    "predicted_count_sum": 242.00000000000003,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 27,
+    "relative_change": 1.2117386636442176e-16,
+    "activity_sum_bq": 3842918.454935622,
+    "predicted_count_sum": 241.99999999999997,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 28,
+    "relative_change": 1.2117386636442178e-16,
+    "activity_sum_bq": 3842918.4549356224,
+    "predicted_count_sum": 242.00000000000003,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 29,
+    "relative_change": 1.2117386636442176e-16,
+    "activity_sum_bq": 3842918.454935622,
+    "predicted_count_sum": 241.99999999999997,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 30,
+    "relative_change": 1.2117386636442178e-16,
+    "activity_sum_bq": 3842918.4549356224,
+    "predicted_count_sum": 242.00000000000003,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 31,
+    "relative_change": 1.2117386636442176e-16,
+    "activity_sum_bq": 3842918.454935622,
+    "predicted_count_sum": 241.99999999999997,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 32,
+    "relative_change": 1.2117386636442178e-16,
+    "activity_sum_bq": 3842918.4549356224,
+    "predicted_count_sum": 242.00000000000003,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 33,
+    "relative_change": 1.2117386636442176e-16,
+    "activity_sum_bq": 3842918.454935622,
+    "predicted_count_sum": 241.99999999999997,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 34,
+    "relative_change": 1.2117386636442178e-16,
+    "activity_sum_bq": 3842918.4549356224,
+    "predicted_count_sum": 242.00000000000003,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 35,
+    "relative_change": 1.2117386636442176e-16,
+    "activity_sum_bq": 3842918.454935622,
+    "predicted_count_sum": 241.99999999999997,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 36,
+    "relative_change": 1.2117386636442178e-16,
+    "activity_sum_bq": 3842918.4549356224,
+    "predicted_count_sum": 242.00000000000003,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 37,
+    "relative_change": 1.2117386636442176e-16,
+    "activity_sum_bq": 3842918.454935622,
+    "predicted_count_sum": 241.99999999999997,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 38,
+    "relative_change": 1.2117386636442178e-16,
+    "activity_sum_bq": 3842918.4549356224,
+    "predicted_count_sum": 242.00000000000003,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 39,
+    "relative_change": 1.2117386636442176e-16,
+    "activity_sum_bq": 3842918.454935622,
+    "predicted_count_sum": 241.99999999999997,
+    "unobservable_voxels": 0
+  },
+  {
+    "iteration": 40,
+    "relative_change": 1.2117386636442178e-16,
+    "activity_sum_bq": 3842918.4549356224,
+    "predicted_count_sum": 242.00000000000003,
+    "unobservable_voxels": 0
+  }
+]

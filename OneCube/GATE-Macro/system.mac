@@ -1,0 +1,10 @@
+# One cylindricalPET system with one ordinary sensitive crystal attachment.
+/gate/systems/cylindricalPET/rsector/attach panel
+/gate/systems/cylindricalPET/module/attach module
+/gate/systems/cylindricalPET/submodule/attach block
+/gate/systems/cylindricalPET/crystal/attach onecube_crystal
+
+/gate/onecube_crystal/attachCrystalSD
+
+# Keep hierarchy evidence in the Gate log for runtime validation.
+/gate/systems/cylindricalPET/describe

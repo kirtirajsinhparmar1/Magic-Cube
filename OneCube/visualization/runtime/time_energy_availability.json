@@ -1,0 +1,40 @@
+{
+  "classification": "exact branch distributions with derived event-count histogram",
+  "plots": {
+    "hits_edep": {
+      "available": true,
+      "branch": "edep",
+      "entries": 233,
+      "output": "hits_energy_hist.png",
+      "reason": null
+    },
+    "hits_per_event": {
+      "available": true,
+      "branch": "eventID",
+      "event_count": 233,
+      "output": "hits_per_event_hist.png",
+      "reason": null
+    },
+    "hits_time": {
+      "available": true,
+      "branch": "time",
+      "entries": 233,
+      "output": "hits_time_hist.png",
+      "reason": null
+    },
+    "singles_energy": {
+      "available": true,
+      "branch": "energy",
+      "entries": 233,
+      "output": "singles_energy_hist.png",
+      "reason": null
+    },
+    "singles_time": {
+      "available": true,
+      "branch": "time",
+      "entries": 233,
+      "output": "singles_time_hist.png",
+      "reason": null
+    }
+  }
+}

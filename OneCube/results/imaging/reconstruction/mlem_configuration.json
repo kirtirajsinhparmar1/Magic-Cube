@@ -1,0 +1,19 @@
+{
+  "algorithm": "maximum-likelihood expectation-maximization",
+  "equations": [
+    "predicted=A@x",
+    "ratio=y/max(predicted,epsilon)",
+    "backprojection=A.T@ratio",
+    "x_new=x*backprojection/(A.T@1)"
+  ],
+  "iterations_configured": 40,
+  "iterations_completed": 40,
+  "epsilon": 1e-12,
+  "initial_value_bq": 1.0,
+  "stabilization": "ratio is zero when predicted count <= epsilon; zero-sensitivity voxels update to zero",
+  "post_filter": {
+    "enabled": false,
+    "method": "none",
+    "sigma_voxels": 0.5
+  }
+}

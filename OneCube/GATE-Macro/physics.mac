@@ -1,0 +1,13 @@
+# OneCube uses the active original-mcsim physics behavior for architecture
+# validation. It is not the final realistic Magic-Cube physics model.
+
+/gate/physics/addProcess PhotoElectric
+/gate/physics/processes/PhotoElectric/setModel StandardModel
+
+# Compton and Rayleigh are intentionally disabled for this validation model.
+/gate/physics/processList Enabled
+/gate/physics/processList Initialized
+
+/gate/physics/Gamma/SetCutInRegion onecube_crystal 1.0 cm
+/gate/physics/Electron/SetCutInRegion onecube_crystal 1.0 cm
+/gate/physics/Positron/SetCutInRegion onecube_crystal 1.0 cm

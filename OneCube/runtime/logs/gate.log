@@ -1,0 +1,242 @@
+[G4] 
+[G4] **************************************************************
+[G4]  Geant4 version Name: geant4-11-02-patch-01 [MT]   (16-February-2024)
+[G4]                        Copyright : Geant4 Collaboration
+[G4]                       References : NIM A 506 (2003), 250-303
+[G4]                                  : IEEE-TNS 53 (2006), 270-278
+[G4]                                  : NIM A 835 (2016), 186-225
+[G4]                              WWW : http://geant4.org/
+[G4] **************************************************************
+[G4] 
+[Core-0] Initialization of geometry
+[Core-0] Initialization of physics
+[Core-0] Initialization of actors
+[Core-0] 
+[Core-0] *******************************************************
+[Core-0]  GATE version 9.4 (2024)
+[Core-0]  Copyright : OpenGATE Collaboration
+[Core-0]  Reference : Phys. Med. Biol. 49(19) 4543-4561     2004 
+[Core-0]  Reference : Phys. Med. Biol. 56(4)  881-901       2011 
+[Core-0]  Reference : Med. Phys.       41(6)  1-14          2014
+[Core-0]  Reference : Phys. Med. Biol. 66(10) 1-23          2021
+[Core-0]  Reference : Frontiers in Physics, 12              2024
+[Core-0]  http://www.opengatecollaboration.org 
+[Core-0] *******************************************************
+[Core-0] 
+[Core-0] You are using Geant4 version 11.2.1
+[Core-0] Starting macro OneCube.mac
+I/O warning : failed to load external entity "./Materials.xml"
+I/O warning : failed to load external entity "./Materials.xml"
+I/O warning: Discard the previous warning if your simulation doesn't transport OPTICAL PHOTONS. 
+Otherwise, please copy the ./Materials.xml file from the gate-source directory in the directory where you run your main macro.
+I/O warning: Discard the previous warning if your simulation doesn't transport OPTICAL PHOTONS. 
+Otherwise, please copy the ./Materials.xml file from the gate-source directory in the directory where you run your main macro.
+
+GATE object:        'systems/cylindricalPET'
+Components:
+
+GATE object:        'systems/cylindricalPET/base'
+Attached to volume: cylindricalPET
+Nb of children:       1
+
+	GATE object:        'systems/cylindricalPET/rsector'
+	Attached to volume: panel
+	Nb of children:       1
+
+		GATE object:        'systems/cylindricalPET/module'
+		Attached to volume: module
+		Nb of children:       1
+
+			GATE object:        'systems/cylindricalPET/submodule'
+			Attached to volume: block
+			Nb of children:       1
+
+				GATE object:        'systems/cylindricalPET/crystal'
+				Attached to volume: onecube_crystal
+				Nb of children:       4
+
+					GATE object:        'systems/cylindricalPET/layer0'
+					Attached to volume: ---
+					Nb of children:       0
+
+					GATE object:        'systems/cylindricalPET/layer1'
+					Attached to volume: ---
+					Nb of children:       0
+
+					GATE object:        'systems/cylindricalPET/layer2'
+					Attached to volume: ---
+					Nb of children:       0
+
+					GATE object:        'systems/cylindricalPET/layer3'
+					Attached to volume: ---
+					Nb of children:       0
+geometrical design type: 1
+ring diameter: -2 mm 
+rsector axial pitch: 0 fm 
+rsector azimuthal pitch: 360 degree
+rsector tangential size: 8 mm 
+rsector axial size: 8 mm 
+module axial size: 6 mm 
+module tangential size: 6 mm 
+module axial pitch: 0 fm 
+module tangential pitch: 0 fm 
+submodule axial size: 4 mm 
+submodule tangential size: 4 mm 
+submodule axial pitch: 0 fm 
+submodule tangential pitch: 0 fm 
+crystal radial size: 2 mm 
+crystal axial size: 2 mm 
+crystal tangential size: 2 mm 
+crystal axial pitch: 0 fm 
+crystal tangential pitch: 0 fm 
+Axial nb of rsectors: 1
+Azimuthal nb of rsectors: 1
+Axial nb of modules: 1
+Tangential nb of modules: 1
+Axial nb of submodules: 1
+Tangential nb of submodules: 1
+Axial nb of crystals: 1
+Tangential nb of crystals: 1
+Radial nb of layers: 0
+
+
+List of Enabled processes:
+
+
+   ===  Process: PhotoElectric  ===
+Particle: gamma
+    * Model(s):
+       - StandardModel
+
+
+
+List of initialized processes:
+
+
+[Core-0] Initialization of geometry
+[Core-0] Initialization of physics
+[Physic-0] WARNING: manual physic lists are being deprecated.
+Please, use physics list builder mechanism instead. Related documentation can be found at:
+http://wiki.opengatecollaboration.org/index.php/Users_Guide:Setting_up_the_physics
+[Core-0] Initialization of actors
+GateSourceMgr::ListSources: List of the sources in the source manager
+Source --------------> source1
+  ID                 : 0
+  type               : gps
+  activity (Bq)      : 3.7e+06
+  startTime (s)      : 0
+  time (s)           : 0
+  forcedUnstable     : 0
+  forcedHalfLife (s) : -0.693147
+  verboseLevel       : 0
+  relative to vol    : world
+---------------------- 
+
+[Acquisition-0]   
+[Acquisition-0] ============= Source initialization =============
+[Acquisition-0]   
+[Acquisition-0] ============= Acquisition starts! =============
+[Acquisition-0] Simulation start time = 0 sec
+[Acquisition-0] Simulation end time   = 1 sec
+[Acquisition-0] Simulation will have  = 1 run(s)
+[Acquisition-0] Slice 0 from 0 to 1 s [slice=1 s]
+=======================================================================
+======                 Electromagnetic Physics Parameters      ========
+=======================================================================
+LPM effect enabled                                 1
+Enable creation and use of sampling tables         0
+Apply cuts on all EM processes                     1
+Use combined TransportationWithMsc                 Disabled
+Use general process                                0
+Enable linear polarisation for gamma               0
+Enable photoeffect sampling below K-shell          1
+Enable sampling of quantum entanglement            0
+X-section factor for integral approach             0.8
+Min kinetic energy for tables                      100 eV 
+Max kinetic energy for tables                      100 TeV
+Number of bins per decade of a table               7
+Verbose level                                      1
+Verbose level for worker thread                    0
+Bremsstrahlung energy threshold above which 
+  primary e+- is added to the list of secondary    100 TeV
+Bremsstrahlung energy threshold above which primary
+  muon/hadron is added to the list of secondary    100 TeV
+Lowest triplet kinetic energy                      1 MeV
+Enable sampling of gamma linear polarisation       0
+5D gamma conversion model type                     0
+5D gamma conversion model on isolated ion          0
+Livermore data directory                           epics_2017
+=======================================================================
+======                 Ionisation Parameters                   ========
+=======================================================================
+Step function for e+-                              (0.2, 1 mm)
+Step function for muons/hadrons                    (0.2, 0.1 mm)
+Step function for light ions                       (0.2, 0.1 mm)
+Step function for general ions                     (0.2, 0.1 mm)
+Lowest e+e- kinetic energy                         1 keV
+Lowest muon/hadron kinetic energy                  1 keV
+Use ICRU90 data                                    0
+Fluctuations of dE/dx are enabled                  1
+Type of fluctuation model for leptons and hadrons  Universal
+Use built-in Birks satuaration                     0
+Build CSDA range enabled                           0
+Use cut as a final range enabled                   0
+Enable angular generator interface                 0
+Max kinetic energy for CSDA tables                 1 GeV
+Max kinetic energy for NIEL computation            0 eV 
+Linear loss limit                                  0.01
+Read data from file for e+e- pair production by mu 0
+=======================================================================
+======                 Multiple Scattering Parameters          ========
+=======================================================================
+Type of msc step limit algorithm for e+-           1
+Type of msc step limit algorithm for muons/hadrons 0
+Msc lateral displacement for e+- enabled           1
+Msc lateral displacement for muons and hadrons     0
+Urban msc model lateral displacement alg96         1
+Range factor for msc step limit for e+-            0.04
+Range factor for msc step limit for muons/hadrons  0.2
+Geometry factor for msc step limitation of e+-     2.5
+Safety factor for msc step limit for e+-           0.6
+Skin parameter for msc step limitation of e+-      1
+Lambda limit for msc step limit for e+-            1 mm
+Use Mott correction for e- scattering              0
+Factor used for dynamic computation of angular 
+  limit between single and multiple scattering     1
+Fixed angular limit between single 
+  and multiple scattering                          3.1416 rad
+Upper energy limit for e+- multiple scattering     100 MeV
+Type of electron single scattering model           0
+Type of nuclear form-factor                        1
+Screening factor                                   1
+=======================================================================
+======                 Atomic Deexcitation Parameters          ========
+=======================================================================
+Fluorescence enabled                               1
+Directory in G4LEDATA for fluorescence data files  fluor
+Auger electron cascade enabled                     0
+PIXE atomic de-excitation enabled                  0
+De-excitation module ignores cuts                  0
+Type of PIXE cross section for hadrons             Empirical
+Type of PIXE cross section for e+-                 Livermore
+=======================================================================
+======                 DNA Physics Parameters                  ========
+=======================================================================
+Use fast sampling in DNA models                    0
+Use Stationary option in DNA models                0
+Use DNA with multiple scattering of e-             0
+Use DNA e- solvation model type                    11003
+=======================================================================
+
+PhotoElectric:  for gamma applyCuts:1  SubType=12 BuildTable=0
+      LambdaPrime table from 200 keV to 100 TeV in 61 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       PhotoElectric : Emin=    0 eV  Emax=  100 TeV  SauterGavrila
+G4VisManager: Using G4TrajectoryDrawByCharge as fallback trajectory model.
+See commands in /vis/modeling/trajectories/ for other options.
+WARNING: Scene "none" not found.
+  /vis/scene/list to see scenes.
+WARNING: command "/vis/viewer/update" could not be applied: no current viewer.
+[Core-0] End of macro OneCube.mac
+Graphics systems deleted.
+Visualization Manager deleting...

@@ -1,0 +1,21 @@
+# Canonical OneCube simulation macro. The stage order mirrors original mcsim.
+/gate/geometry/setMaterialDatabase GateMaterials.db
+
+/control/execute geometry.mac
+/control/execute plate.mac
+/control/execute system.mac
+/control/execute physics.mac
+
+/gate/run/initialize
+
+/control/execute digitizer.mac
+/control/execute source.mac
+/gate/random/setEngineName MersenneTwister
+/control/execute verbose.mac
+/control/execute output.mac
+
+/gate/application/setTimeStart 0 s
+/gate/application/setTimeStop 1 s
+/gate/application/setTimeSlice 1 s
+
+/gate/application/startDAQ

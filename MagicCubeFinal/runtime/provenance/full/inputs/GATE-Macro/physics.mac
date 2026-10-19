@@ -1,0 +1,49 @@
+# Magic-Cube Step 5A: faithful port of the active original physics.mac.
+# Only the sensitive-volume region names are adapted to the four GAGG
+# families.  K9 and Air remain passive, as in the validated Step-4 setup.
+
+/gate/physics/addProcess PhotoElectric
+/gate/physics/processes/PhotoElectric/setModel StandardModel
+
+# These processes are intentionally disabled in the original active macro.
+# Keep the comments as a trace of the reference implementation.
+#/gate/physics/addProcess Compton
+#/gate/physics/processes/Compton/setModel StandardModel
+
+#/gate/physics/addProcess RayleighScattering
+#/gate/physics/processes/RayleighScattering/setModel PenelopeModel
+
+#/gate/physics/addProcess ElectronIonisation
+#/gate/physics/processes/ElectronIonisation/setModel StandardModel e-
+#/gate/physics/processes/ElectronIonisation/setModel StandardModel e+
+
+#/gate/physics/addProcess Bremsstrahlung
+#/gate/physics/processes/Bremsstrahlung/setModel StandardModel e-
+#/gate/physics/processes/Bremsstrahlung/setModel StandardModel e+
+
+#/gate/physics/addProcess PositronAnnihilation
+
+#/gate/physics/addProcess MultipleScattering e+
+#/gate/physics/addProcess MultipleScattering e-
+
+/gate/physics/processList Enabled
+/gate/physics/processList Initialized
+
+# Faithful port of the original 1.0 cm gamma/electron/positron cuts.
+# The original xlayer1..xlayer8 targets are replaced by the four active
+# Magic-Cube GAGG family volumes; each command applies to all family copies.
+/gate/physics/Gamma/SetCutInRegion mc_gagg_ee 1.0 cm
+/gate/physics/Electron/SetCutInRegion mc_gagg_ee 1.0 cm
+/gate/physics/Positron/SetCutInRegion mc_gagg_ee 1.0 cm
+
+/gate/physics/Gamma/SetCutInRegion mc_gagg_eo 1.0 cm
+/gate/physics/Electron/SetCutInRegion mc_gagg_eo 1.0 cm
+/gate/physics/Positron/SetCutInRegion mc_gagg_eo 1.0 cm
+
+/gate/physics/Gamma/SetCutInRegion mc_gagg_oe 1.0 cm
+/gate/physics/Electron/SetCutInRegion mc_gagg_oe 1.0 cm
+/gate/physics/Positron/SetCutInRegion mc_gagg_oe 1.0 cm
+
+/gate/physics/Gamma/SetCutInRegion mc_gagg_oo 1.0 cm
+/gate/physics/Electron/SetCutInRegion mc_gagg_oo 1.0 cm
+/gate/physics/Positron/SetCutInRegion mc_gagg_oo 1.0 cm

@@ -1,0 +1,47 @@
+{
+  "relative_response_threshold": 0.01,
+  "response_peak_per_measurement": [
+    6.297297297297298e-05
+  ],
+  "response_centroid_mm": [
+    [
+      0.0,
+      0.0,
+      -51.0
+    ]
+  ],
+  "view_angle_deg": [
+    270.0
+  ],
+  "response_mask_voxel_count": [
+    1
+  ],
+  "fwhm_profiles": [
+    {
+      "valid": false,
+      "fwhm_mm": null,
+      "peak": 6.297297297297298e-05,
+      "half_maximum": null,
+      "left_crossing_mm": null,
+      "right_crossing_mm": null,
+      "reason": "requires at least 3 spatial samples; found 1",
+      "axis_mm": [
+        0.0
+      ],
+      "profile": [
+        6.297297297297298e-05
+      ],
+      "measurement_index": 0,
+      "profile_axis": "x",
+      "measurement_id": "measurement_bin:0",
+      "detector_id": 0,
+      "acquisition_view_id": null,
+      "response_peak_cps_per_bq": 6.297297297297298e-05,
+      "response_voxel_ids": [
+        0
+      ],
+      "view_angle_deg": 270.0
+    }
+  ],
+  "fwhm_method": "marginal spatial response profile with linear interpolation at half-maximum crossings"
+}

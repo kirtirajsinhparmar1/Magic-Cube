@@ -1,0 +1,17 @@
+{
+  "mode": "validation",
+  "shape": [
+    2048,
+    1
+  ],
+  "passed": true,
+  "pass_token": "MAGICCUBE_2048x1_END_TO_END_PASS",
+  "validation_report": "/vscratch/grp-rutaoyao/Kirtiraj/Magic Cube/mcsim/MagicCubeFinal/results/validation/runtime_validation_validation.json",
+  "raw_counts": "results/system_matrix/system_matrix_raw.npy",
+  "normalized_response": "results/system_matrix/system_matrix.npy",
+  "canonical_detector_order": "0..2047",
+  "source_order": [
+    0
+  ],
+  "failures": []
+}

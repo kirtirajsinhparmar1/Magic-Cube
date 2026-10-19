@@ -1,0 +1,32 @@
+{
+  "source_config": "../../config/onecube_config.json",
+  "input_candidates": {
+    "hits": [
+      "../../runtime/merged/hits.root",
+      "../../runtime/sim/onecube.hits.root"
+    ],
+    "singles": [
+      "../../runtime/merged/singles.root",
+      "../../runtime/sim/onecube.Singles.root"
+    ]
+  },
+  "output_dir": "../outputs",
+  "runtime_dir": "../runtime",
+  "intensity_bins": 8,
+  "animation_frames": 12,
+  "required_pngs": [
+    "geometry_overview.png",
+    "detector_render.png",
+    "hits_3d.png",
+    "hits_projection_xy.png",
+    "hits_projection_xz.png",
+    "hits_projection_yz.png",
+    "cube_intensity_3d.png",
+    "cube_intensity_xy.png",
+    "cube_intensity_xz.png",
+    "cube_intensity_yz.png",
+    "time_energy_summaries.png",
+    "singles_summary.png",
+    "response_dashboard.png"
+  ]
+}

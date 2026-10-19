@@ -1,0 +1,50 @@
+# OneCube geometry: one sensitive 2 mm GAGG cube and Air bookkeeping volumes.
+
+# World
+/gate/world/geometry/setXLength 140 mm
+/gate/world/geometry/setYLength 140 mm
+/gate/world/geometry/setZLength 140 mm
+/gate/world/setMaterial Air
+
+# CylindricalPET system container
+/gate/world/daughters/name cylindricalPET
+/gate/world/daughters/insert cylinder
+/gate/cylindricalPET/geometry/setRmin 0 mm
+/gate/cylindricalPET/geometry/setRmax 10 mm
+/gate/cylindricalPET/geometry/setHeight 10 mm
+/gate/cylindricalPET/placement/setTranslation 0 0 0 mm
+/gate/cylindricalPET/setMaterial Air
+
+# System bookkeeping hierarchy
+/gate/cylindricalPET/daughters/name panel
+/gate/cylindricalPET/daughters/insert box
+/gate/panel/geometry/setXLength 8 mm
+/gate/panel/geometry/setYLength 8 mm
+/gate/panel/geometry/setZLength 8 mm
+/gate/panel/placement/setTranslation 0 0 0 mm
+/gate/panel/setMaterial Air
+
+/gate/panel/daughters/name module
+/gate/panel/daughters/insert box
+/gate/module/geometry/setXLength 6 mm
+/gate/module/geometry/setYLength 6 mm
+/gate/module/geometry/setZLength 6 mm
+/gate/module/placement/setTranslation 0 0 0 mm
+/gate/module/setMaterial Air
+
+/gate/module/daughters/name block
+/gate/module/daughters/insert box
+/gate/block/geometry/setXLength 4 mm
+/gate/block/geometry/setYLength 4 mm
+/gate/block/geometry/setZLength 4 mm
+/gate/block/placement/setTranslation 0 0 0 mm
+/gate/block/setMaterial Air
+
+# The only detector element and the only GAGG volume.
+/gate/block/daughters/name onecube_crystal
+/gate/block/daughters/insert box
+/gate/onecube_crystal/geometry/setXLength 2 mm
+/gate/onecube_crystal/geometry/setYLength 2 mm
+/gate/onecube_crystal/geometry/setZLength 2 mm
+/gate/onecube_crystal/placement/setTranslation 0 0 0 mm
+/gate/onecube_crystal/setMaterial GAGG

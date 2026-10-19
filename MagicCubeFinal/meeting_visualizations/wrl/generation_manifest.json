@@ -1,0 +1,23 @@
+{
+  "generated_utc": "2026-09-28T18:46:28.038112+00:00",
+  "files": {
+    "onecube_geometry.wrl": "49e84de6d9cf0555511495502d80fe7845fbd35015fbb99e682120c227014067",
+    "onecube_source_view.wrl": "d5daf8f1b5dd42ed9a7d27a292867f201fedd348631bb38bbec3ccfdf52a7696",
+    "magiccube_full_geometry.wrl": "07a30ec21745c82a80c689b5c1ba7d84b00dc4b73d4821bb3ba180e08d063ed8",
+    "magiccube_cutaway.wrl": "4bc10bf1414eb9159eb48b205ad5fdc2b92cf06860b9522a5aa2023efc3059c2",
+    "magiccube_source_fov.wrl": "05b03bd0305e6a7731413fe925ff6ebfe77cd5187974b2ae54ef3796791d4613",
+    "magiccube_source_grid.wrl": "4116159dd678aa2941e1a8ebac4d8f41ce7a8f150f13779ee692618d1d7024ec",
+    "magiccube_geometry_with_source.wrl": "2bd2fdad2d29a635d0593f168832c7ca39180f4d7dd5c653c05fa278740a4481",
+    "magiccube_exploded_layers.wrl": "c88fe5df0db9221363ff9b17988446c1983ed568359d0893a12c103ae305641b",
+    "magiccube_single_layer.wrl": "35081109d7b89ba4911b64593424a25165710c37cfd638f9f8384cde74abb13a",
+    "magiccube_adjacent_layers.wrl": "372b571635a275d13dc19ce5c4a6bc90e1292e1784999292b475017f92f537f8",
+    "magiccube_detector_ids.wrl": "e0abfcd2d2aa6602cc78e9697641a231b0628c66f3a94a4540b008144e321925",
+    "magiccube_validated_response.wrl": "2239e3b2e6406f46de151b69aa056b235a32d5033a3850af0a3494304794f0d0"
+  },
+  "response": "Generated from /vscratch/grp-rutaoyao/Kirtiraj/Magic Cube/mcsim/MagicCubeFinal/results/system_matrix/system_matrix_raw.npy. Minimum 8, maximum 266, sum 189844. Linear t=(count-min)/(max-min); RGB=(0.12+0.88t,0.08+0.77t,0.35-0.20t). Counts are raw Singles, not normalized sensitivity. K9 omitted. Canonical order 0..2047; no production data used.",
+  "write_boundary": "/vscratch/grp-rutaoyao/Kirtiraj/Magic Cube/mcsim/MagicCubeFinal/meeting_visualizations/wrl",
+  "protected_files": 87,
+  "audit_guard": "Only output-directory writes permitted; no subprocesses allowed",
+  "gate_executed": false,
+  "slurm_submitted": false
+}

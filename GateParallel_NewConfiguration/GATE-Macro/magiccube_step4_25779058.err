@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/vscratch/grp-rutaoyao/Kirtiraj/Magic Cube/mcsim/GateParallel_NewConfiguration/GATE-Macro/run_magiccube_step4_runtime.py", line 288, in <module>
+    sys.exit(main())
+  File "/vscratch/grp-rutaoyao/Kirtiraj/Magic Cube/mcsim/GateParallel_NewConfiguration/GATE-Macro/run_magiccube_step4_runtime.py", line 258, in main
+    run_gate(
+  File "/vscratch/grp-rutaoyao/Kirtiraj/Magic Cube/mcsim/GateParallel_NewConfiguration/GATE-Macro/run_magiccube_step4_runtime.py", line 215, in run_gate
+    raise RuntimeError(
+RuntimeError: probe_00: Gate failed with exit code -6; see /vscratch/grp-rutaoyao/Kirtiraj/Magic Cube/runtime_validation/step4/probe_00.stderr

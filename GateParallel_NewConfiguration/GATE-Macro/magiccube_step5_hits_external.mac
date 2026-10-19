@@ -1,0 +1,36 @@
+# Magic-Cube Step-5 raw-Hits diagnostic B: bounded external smoke source.
+# The production geometry, system, and physics files are intentionally reused.
+
+/gate/geometry/setMaterialDatabase GateMaterials.db
+
+/gate/world/geometry/setXLength 200.0 mm
+/gate/world/geometry/setYLength 200.0 mm
+/gate/world/geometry/setZLength 200.0 mm
+/gate/world/setMaterial Air
+
+/control/execute magiccube_production_geometry.mac
+/control/execute magiccube_production_system.mac
+/control/execute magiccube_production_physics.mac
+
+/gate/run/initialize
+
+# This is the validated Step-4/Step-5 external smoke-source configuration.
+/gate/source/addSource external_140kev_smoke gps
+/gate/source/external_140kev_smoke/gps/particle gamma
+/gate/source/external_140kev_smoke/gps/pos/type Point
+/gate/source/external_140kev_smoke/gps/pos/centre 0.0 0.0 -66.0 mm
+/gate/source/external_140kev_smoke/gps/ang/type iso
+/gate/source/external_140kev_smoke/gps/ene/type Mono
+/gate/source/external_140kev_smoke/gps/ene/mono 140.0 keV
+/gate/source/external_140kev_smoke/setActivity 20000.0 becquerel
+
+/gate/random/setEngineName MersenneTwister
+/gate/application/setTimeStart 0.0 s
+/gate/application/setTimeStop 1.0 s
+/gate/application/setTimeSlice 1.0 s
+
+/gate/output/tree/enable
+/gate/output/tree/addFileName /vscratch/grp-rutaoyao/Kirtiraj/Magic Cube/runtime_validation/step5_hits/magiccube_step5_hits_external.root
+/gate/output/tree/hits/enable
+
+/gate/application/startDAQ

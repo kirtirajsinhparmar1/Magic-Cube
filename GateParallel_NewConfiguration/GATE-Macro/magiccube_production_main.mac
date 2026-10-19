@@ -1,0 +1,29 @@
+# Magic-Cube production-equivalent main macro
+#
+# This preserves the active SPEBT.mac orchestration.  The original physical
+# plate.mac is intentionally omitted because the Magic-Cube detector is the
+# replacement detector architecture.
+
+# M A N D A T O R Y
+/gate/geometry/setMaterialDatabase GateMaterials.db
+
+/control/execute magiccube_production_geometry.mac
+/control/execute magiccube_production_system.mac
+/control/execute magiccube_production_physics.mac
+
+/gate/run/initialize
+
+/control/execute magiccube_production_digitizer.mac
+/control/execute magiccube_production_source.mac
+
+/gate/random/setEngineName MersenneTwister
+
+# Experiment timing preserved from the active original main macro.
+/gate/application/setTimeStart 0. s
+/gate/application/setTimeStop 15 s
+
+# Active original verbosity/output stages.
+/control/execute verbose.mac
+/control/execute magiccube_production_output.mac
+
+/gate/application/startDAQ

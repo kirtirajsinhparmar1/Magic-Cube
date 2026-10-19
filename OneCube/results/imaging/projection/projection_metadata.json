@@ -1,0 +1,9 @@
+{
+  "equation": "y_expected = A_counts @ x_true",
+  "operator_units": "counts/Bq",
+  "phantom_units": "Bq/voxel",
+  "measurement_units": "counts per measurement bin",
+  "acquisition_s": 1.0,
+  "poisson_seed": 1402026,
+  "is_measured_gate_phantom_data": false
+}

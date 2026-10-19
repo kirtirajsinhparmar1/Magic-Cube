@@ -1,0 +1,1 @@
+/var/spool/slurmd/job26030041/slurm_script: line 29: 771470 Aborted                 Gate magiccube_step5_digitizer_check.mac > "$RUNTIME_DIR/magiccube_step5_digitizer_gate.log" 2>&1

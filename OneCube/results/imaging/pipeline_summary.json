@@ -1,0 +1,79 @@
+{
+  "matrix_shape": [
+    1,
+    1
+  ],
+  "sensitivity_summary": {
+    "central_voxel_index": 0,
+    "central": 6.297297297297298e-05,
+    "mean": 6.297297297297298e-05,
+    "minimum": 6.297297297297298e-05,
+    "maximum": 6.297297297297298e-05,
+    "voxel_count": 1,
+    "units": "cps/Bq",
+    "central_cps_per_mbq": 62.972972972972975,
+    "mean_cps_per_mbq": 62.972972972972975,
+    "minimum_cps_per_mbq": 62.972972972972975,
+    "maximum_cps_per_mbq": 62.972972972972975,
+    "raw_calibration_singles_count_sum": 233.0,
+    "raw_count_interpretation": "observed singles used to form the response calibration; not a spatial sensitivity map"
+  },
+  "fwhm_valid_count": 0,
+  "fwhm_measurements": 1,
+  "asci_summary": {
+    "angular_bins": 360,
+    "valid_measurements": 1,
+    "occupied_angular_bins": 1,
+    "mean_fraction": 0.002777777777777778,
+    "mean_percent": 0.2777777777777778,
+    "minimum_percent": 0.2777777777777778,
+    "maximum_percent": 0.2777777777777778,
+    "voxel_ids": [
+      0
+    ],
+    "view_angles_deg": [
+      270.0
+    ],
+    "method": "fraction of configured angular bins with at least one thresholded response covering each voxel"
+  },
+  "ji": {
+    "formula": "(mean_sensitivity_cps_per_bq / mean_fwhm_mm^2) * (mean_asci_percent / 100)",
+    "mean_sensitivity_cps_per_bq": 6.297297297297298e-05,
+    "mean_fwhm_mm": null,
+    "mean_asci_percent": 0.2777777777777778,
+    "ji": null,
+    "valid": false,
+    "reason": "no valid FWHM profiles; JI is not scientifically computable"
+  },
+  "phantom_activity_bq": 3700000.0,
+  "expected_projection_counts": [
+    233.0
+  ],
+  "poisson_projection_counts": [
+    242.0
+  ],
+  "mlem_completed_iterations": 40,
+  "scientific_reconstruction_identifiable": false,
+  "reconstruction_metrics": {
+    "mse_bq2": 20425684761.18553,
+    "rmse_bq": 142918.4549356224,
+    "normalized_error": 0.03862660944206011,
+    "correlation": null,
+    "activity_recovery_ratio": 1.0386266094420602
+  },
+  "generated_plots": [
+    "source_image_grid.png",
+    "sensitivity_map.png",
+    "response_map.png",
+    "detector_response_map.png",
+    "response_region_map.png",
+    "asci_map.png",
+    "phantom.png",
+    "reconstruction.png",
+    "reconstruction_error.png",
+    "reconstruction_comparison.png",
+    "response_profile_fwhm.png",
+    "projection_comparison.png",
+    "mlem_convergence.png"
+  ]
+}

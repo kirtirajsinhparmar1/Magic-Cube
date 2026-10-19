@@ -1,0 +1,9 @@
+{
+  "formula": "(mean_sensitivity_cps_per_bq / mean_fwhm_mm^2) * (mean_asci_percent / 100)",
+  "mean_sensitivity_cps_per_bq": 6.297297297297298e-05,
+  "mean_fwhm_mm": null,
+  "mean_asci_percent": 0.2777777777777778,
+  "ji": null,
+  "valid": false,
+  "reason": "no valid FWHM profiles; JI is not scientifically computable"
+}

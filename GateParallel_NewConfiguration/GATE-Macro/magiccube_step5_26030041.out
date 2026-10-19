@@ -1,0 +1,36 @@
+PASS: Step-5 runtime output directory exists
+PASS: Gate exit code is recorded
+FAIL: Gate exit code is zero — exit_code=134
+FAIL: logs contain no fatal geometry or digitizer exception — magiccube_step5_digitizer_gate.log: *** Fatal Exception *** core dump ***
+PASS: at least one ROOT output exists
+FAIL: all ROOT outputs are readable — ImportError: 
+
+IMPORTANT: PLEASE READ THIS FOR ADVICE ON HOW TO SOLVE THIS ISSUE!
+
+Importing the numpy C-extensions failed. This error can happen for
+many reasons, often due to issues with your setup or how NumPy was
+installed.
+
+We have compiled some common reasons and troubleshooting tips at:
+
+    https://numpy.org/devdocs/user/troubleshooting-importerror.html
+
+Please note and check the following:
+
+  * The Python version is: Python3.10 from "/user/kmparmar/venv/bin/python"
+  * The NumPy version is: "1.21.3"
+
+and make sure that they are the versions you expect.
+Please carefully study the documentation linked above for further help.
+
+Original error was: No module named 'numpy.core._multiarray_umath'
+
+FAIL: at least one non-empty Hits output exists — entries=0
+FAIL: at least one non-empty Singles output exists — entries=0
+FAIL: digitized Singles collection/output is present — collections=[]
+INFO: ROOT output has no explicit family-name token; the original common Singles collection convention is accepted.
+ROOT files: ['magiccube_step5_digitizer.Singles_mc_gagg_ee.root', 'magiccube_step5_digitizer.Singles_mc_gagg_eo.root', 'magiccube_step5_digitizer.Singles_mc_gagg_oe.root', 'magiccube_step5_digitizer.Singles_mc_gagg_oo.root', 'magiccube_step5_digitizer.hits_mc_gagg_ee.root', 'magiccube_step5_digitizer.hits_mc_gagg_eo.root', 'magiccube_step5_digitizer.hits_mc_gagg_oe.root', 'magiccube_step5_digitizer.hits_mc_gagg_oo.root']
+Collections detected: []
+Hits entries: 0
+Singles entries: 0
+RUNTIME VALIDATION: FAIL (6 failed checks)

@@ -1,0 +1,8 @@
+hadd Target file: /vscratch/grp-rutaoyao/Kirtiraj/Magic Cube/mcsim/OneCube/runtime/merged/hits.root
+hadd compression setting for all output: 1
+hadd Source file 1: /vscratch/grp-rutaoyao/Kirtiraj/Magic Cube/mcsim/OneCube/runtime/sim/onecube.hits.root
+hadd Target path: /vscratch/grp-rutaoyao/Kirtiraj/Magic Cube/mcsim/OneCube/runtime/merged/hits.root:/
+hadd Target file: /vscratch/grp-rutaoyao/Kirtiraj/Magic Cube/mcsim/OneCube/runtime/merged/singles.root
+hadd compression setting for all output: 1
+hadd Source file 1: /vscratch/grp-rutaoyao/Kirtiraj/Magic Cube/mcsim/OneCube/runtime/sim/onecube.Singles.root
+hadd Target path: /vscratch/grp-rutaoyao/Kirtiraj/Magic Cube/mcsim/OneCube/runtime/merged/singles.root:/

@@ -1,0 +1,64 @@
+# Magic-Cube Step-5 raw-Hits diagnostic A: four validated internal probes.
+# The production geometry, system, and physics files are intentionally reused.
+
+/gate/geometry/setMaterialDatabase GateMaterials.db
+
+/gate/world/geometry/setXLength 200.0 mm
+/gate/world/geometry/setYLength 200.0 mm
+/gate/world/geometry/setZLength 200.0 mm
+/gate/world/setMaterial Air
+
+/control/execute magiccube_production_geometry.mac
+/control/execute magiccube_production_system.mac
+/control/execute magiccube_production_physics.mac
+
+/gate/run/initialize
+
+# One 30-keV isotropic point source at the validated first repeat of each
+# sensitive GAGG family. These are detector-map centers from Step 4.
+/gate/source/addSource internal_mc_gagg_ee gps
+/gate/source/internal_mc_gagg_ee/gps/particle gamma
+/gate/source/internal_mc_gagg_ee/gps/pos/type Point
+/gate/source/internal_mc_gagg_ee/gps/pos/centre -31.5 -31.5 -15.0 mm
+/gate/source/internal_mc_gagg_ee/gps/ang/type iso
+/gate/source/internal_mc_gagg_ee/gps/ene/type Mono
+/gate/source/internal_mc_gagg_ee/gps/ene/mono 30.0 keV
+/gate/source/internal_mc_gagg_ee/setActivity 100.0 becquerel
+
+/gate/source/addSource internal_mc_gagg_eo gps
+/gate/source/internal_mc_gagg_eo/gps/particle gamma
+/gate/source/internal_mc_gagg_eo/gps/pos/type Point
+/gate/source/internal_mc_gagg_eo/gps/pos/centre -31.5 -27.3 -13.0 mm
+/gate/source/internal_mc_gagg_eo/gps/ang/type iso
+/gate/source/internal_mc_gagg_eo/gps/ene/type Mono
+/gate/source/internal_mc_gagg_eo/gps/ene/mono 30.0 keV
+/gate/source/internal_mc_gagg_eo/setActivity 100.0 becquerel
+
+/gate/source/addSource internal_mc_gagg_oe gps
+/gate/source/internal_mc_gagg_oe/gps/particle gamma
+/gate/source/internal_mc_gagg_oe/gps/pos/type Point
+/gate/source/internal_mc_gagg_oe/gps/pos/centre -27.3 -31.5 -13.0 mm
+/gate/source/internal_mc_gagg_oe/gps/ang/type iso
+/gate/source/internal_mc_gagg_oe/gps/ene/type Mono
+/gate/source/internal_mc_gagg_oe/gps/ene/mono 30.0 keV
+/gate/source/internal_mc_gagg_oe/setActivity 100.0 becquerel
+
+/gate/source/addSource internal_mc_gagg_oo gps
+/gate/source/internal_mc_gagg_oo/gps/particle gamma
+/gate/source/internal_mc_gagg_oo/gps/pos/type Point
+/gate/source/internal_mc_gagg_oo/gps/pos/centre -27.3 -27.3 -15.0 mm
+/gate/source/internal_mc_gagg_oo/gps/ang/type iso
+/gate/source/internal_mc_gagg_oo/gps/ene/type Mono
+/gate/source/internal_mc_gagg_oo/gps/ene/mono 30.0 keV
+/gate/source/internal_mc_gagg_oo/setActivity 100.0 becquerel
+
+/gate/random/setEngineName MersenneTwister
+/gate/application/setTimeStart 0.0 s
+/gate/application/setTimeStop 1.0 s
+/gate/application/setTimeSlice 1.0 s
+
+/gate/output/tree/enable
+/gate/output/tree/addFileName /vscratch/grp-rutaoyao/Kirtiraj/Magic Cube/runtime_validation/step5_hits/magiccube_step5_hits_internal.root
+/gate/output/tree/hits/enable
+
+/gate/application/startDAQ

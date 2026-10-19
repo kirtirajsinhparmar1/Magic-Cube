@@ -1,0 +1,22 @@
+{
+  "pattern": "uniform",
+  "total_activity_bq": 3700000.0,
+  "image_shape": [
+    1,
+    1,
+    1
+  ],
+  "voxel_ordering": "system_matrix_metadata.source_ids; last axis varies fastest",
+  "voxel_ids": [
+    0
+  ],
+  "voxel_coords_mm": [
+    [
+      0.0,
+      0.0,
+      -51.0
+    ]
+  ],
+  "activity_units": "Bq per voxel",
+  "synthetic": true
+}

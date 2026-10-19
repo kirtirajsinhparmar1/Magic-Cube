@@ -1,0 +1,14 @@
+{
+  "basis": "ascending time branch; cumulative positions, not trajectories",
+  "classification": "derived cumulative Hit buildup; not a reconstructed photon trajectory",
+  "frames": 12,
+  "hits": 233,
+  "output": "/vscratch/grp-rutaoyao/Kirtiraj/Magic Cube/mcsim/OneCube/visualization/outputs/hit_buildup.gif",
+  "position_branches": {
+    "x": "posX",
+    "y": "posY",
+    "z": "posZ"
+  },
+  "supported": true,
+  "trajectory_data_present": false
+}

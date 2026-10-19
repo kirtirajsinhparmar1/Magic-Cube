@@ -1,0 +1,19 @@
+{
+  "canonical_detector_id": 0,
+  "classification": "exact Singles branches; no position fabricated when absent",
+  "energy": {
+    "available": true,
+    "branch": "energy"
+  },
+  "entries": 233,
+  "positions": {
+    "available": true,
+    "branches": "globalPosX,globalPosY,globalPosZ",
+    "output": "singles_position_3d.png",
+    "reason": "exact Singles position branches: globalPosX,globalPosY,globalPosZ"
+  },
+  "time": {
+    "available": true,
+    "branch": "time"
+  }
+}

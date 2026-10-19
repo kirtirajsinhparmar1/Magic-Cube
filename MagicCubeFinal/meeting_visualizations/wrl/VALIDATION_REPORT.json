@@ -1,0 +1,83 @@
+{
+  "status": "PASS",
+  "models": {
+    "onecube_geometry.wrl": {
+      "bytes": 4305,
+      "gagg": 0,
+      "k9": 0,
+      "syntax": "PASS"
+    },
+    "onecube_source_view.wrl": {
+      "bytes": 4308,
+      "gagg": 0,
+      "k9": 0,
+      "syntax": "PASS"
+    },
+    "magiccube_full_geometry.wrl": {
+      "bytes": 327780,
+      "gagg": 2048,
+      "k9": 2048,
+      "syntax": "PASS"
+    },
+    "magiccube_cutaway.wrl": {
+      "bytes": 328040,
+      "gagg": 2048,
+      "k9": 2048,
+      "syntax": "PASS"
+    },
+    "magiccube_source_fov.wrl": {
+      "bytes": 329437,
+      "gagg": 2048,
+      "k9": 2048,
+      "syntax": "PASS"
+    },
+    "magiccube_source_grid.wrl": {
+      "bytes": 551506,
+      "gagg": 2048,
+      "k9": 2048,
+      "syntax": "PASS"
+    },
+    "magiccube_geometry_with_source.wrl": {
+      "bytes": 329446,
+      "gagg": 2048,
+      "k9": 2048,
+      "syntax": "PASS"
+    },
+    "magiccube_exploded_layers.wrl": {
+      "bytes": 331838,
+      "gagg": 2048,
+      "k9": 2048,
+      "syntax": "PASS"
+    },
+    "magiccube_single_layer.wrl": {
+      "bytes": 24005,
+      "gagg": 128,
+      "k9": 128,
+      "syntax": "PASS"
+    },
+    "magiccube_adjacent_layers.wrl": {
+      "bytes": 43539,
+      "gagg": 256,
+      "k9": 256,
+      "syntax": "PASS"
+    },
+    "magiccube_detector_ids.wrl": {
+      "bytes": 169967,
+      "gagg": 2048,
+      "k9": 0,
+      "syntax": "PASS"
+    },
+    "magiccube_validated_response.wrl": {
+      "bytes": 487561,
+      "gagg": 2048,
+      "k9": 0,
+      "syntax": "PASS"
+    }
+  },
+  "protected_input_hashes_unchanged": 87,
+  "write_boundary": "/vscratch/grp-rutaoyao/Kirtiraj/Magic Cube/mcsim/MagicCubeFinal/meeting_visualizations/wrl",
+  "gate_executed": false,
+  "slurm_submitted": false,
+  "viewer_launched": false,
+  "limitations": "Checks emitted VRML97 node/field syntax and data; no GUI rendering test. Active production outputs excluded from static integrity baseline."
+}

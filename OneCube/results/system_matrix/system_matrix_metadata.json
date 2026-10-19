@@ -1,0 +1,18 @@
+{
+  "shape": [
+    1,
+    1
+  ],
+  "npy_quantity": "response_per_Bq_s",
+  "npy_units": "counts / (s * Bq), numerically cps/Bq",
+  "normalization": "raw_singles_count / (acquisition_s * activity_Bq)",
+  "raw_count_preserved": true,
+  "detector_ids": [
+    0
+  ],
+  "source_ids": [
+    0
+  ],
+  "activity_Bq": 3700000.0,
+  "acquisition_s": 1.0
+}

@@ -1,0 +1,7 @@
+Gate exit code: 0
+Hits entries: 0
+Singles entries: 0
+STEP-5 SYSTEM OUTPUT VALIDATION: FAIL
+- no non-empty Hits tree was found
+- no non-empty Singles tree was found
+Validator exit code: 1

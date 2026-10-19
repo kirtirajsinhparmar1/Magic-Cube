@@ -1,0 +1,5 @@
+Gate exit code: 255
+STEP-5 SYSTEM OUTPUT VALIDATION: FAIL
+- Gate exit code is 255, expected 0
+- no ROOT output files were found
+Validator exit code: 1

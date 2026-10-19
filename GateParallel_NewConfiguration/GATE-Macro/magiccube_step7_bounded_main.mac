@@ -1,0 +1,27 @@
+# Magic-Cube Step-7 bounded validation main macro
+#
+# This is derived from magiccube_production_main.mac.  The production
+# configuration remains 15 s; this validation copy changes only the stop time
+# to 1 s and selects the isolated bounded-output macro.
+
+# M A N D A T O R Y
+/gate/geometry/setMaterialDatabase GateMaterials.db
+
+/control/execute magiccube_production_geometry.mac
+/control/execute magiccube_production_system.mac
+/control/execute magiccube_production_physics.mac
+
+/gate/run/initialize
+
+/control/execute magiccube_production_digitizer.mac
+/control/execute magiccube_production_source.mac
+
+/gate/random/setEngineName MersenneTwister
+
+/gate/application/setTimeStart 0. s
+/gate/application/setTimeStop 1 s
+
+/control/execute verbose.mac
+/control/execute magiccube_step7_bounded_output.mac
+
+/gate/application/startDAQ

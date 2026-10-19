@@ -1,0 +1,24 @@
+ONECUBE_END_TO_END_PASS
+OneCube detector:
+    2 x 2 x 2 mm GAGG
+    detector ID 0
+Source:
+    140 keV
+    position (0,0,-51) mm
+    50-mm surface distance
+    3.7 MBq
+    1 s
+Runtime:
+    Gate exit code: 0
+Hits:
+    count 233
+Singles:
+    count 233
+PPDF:
+    1
+Matrix:
+    shape 1x1
+    raw count 233
+    cps/MBq 62.973
+Final:
+    ONECUBE_END_TO_END_PASS

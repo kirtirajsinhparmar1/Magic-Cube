@@ -1,0 +1,36 @@
+
+INTERNAL TEST
+Gate exit code: 0
+GATE log: internal_gate.log
+Hits files:
+  magiccube_step5_hits_internal.hits_mc_gagg_ee.root
+  magiccube_step5_hits_internal.hits_mc_gagg_eo.root
+  magiccube_step5_hits_internal.hits_mc_gagg_oe.root
+  magiccube_step5_hits_internal.hits_mc_gagg_oo.root
+  magiccube_step5_hits_internal.hits_mc_gagg_ee.root :: tree entries=101
+  magiccube_step5_hits_internal.hits_mc_gagg_eo.root :: tree entries=96
+  magiccube_step5_hits_internal.hits_mc_gagg_oe.root :: tree entries=116
+  magiccube_step5_hits_internal.hits_mc_gagg_oo.root :: tree entries=98
+Total Hits entries: 411
+POSITION-DERIVED MAPPING: NOT PERFORMED — position branches unavailable
+Status: PASS
+
+EXTERNAL TEST
+Gate exit code: 0
+GATE log: external_gate.log
+Hits files:
+  magiccube_step5_hits_external.hits_mc_gagg_ee.root
+  magiccube_step5_hits_external.hits_mc_gagg_eo.root
+  magiccube_step5_hits_external.hits_mc_gagg_oe.root
+  magiccube_step5_hits_external.hits_mc_gagg_oo.root
+  magiccube_step5_hits_external.hits_mc_gagg_ee.root :: tree entries=261
+  magiccube_step5_hits_external.hits_mc_gagg_eo.root :: tree entries=230
+  magiccube_step5_hits_external.hits_mc_gagg_oe.root :: tree entries=226
+  magiccube_step5_hits_external.hits_mc_gagg_oo.root :: tree entries=253
+Total Hits entries: 970
+Status: PASS
+
+INTERPRETATION: RAW_HITS_PATH_VALIDATED
+Internal Gate exit code: 0
+External Gate exit code: 0
+Output-validator exit code: 0

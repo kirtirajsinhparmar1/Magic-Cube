@@ -1,0 +1,11 @@
+# Step-7 bounded-validation output.
+# Identical to magiccube_production_output.mac except for the isolated file prefix.
+
+/gate/output/tree/enable
+/gate/output/tree/addFileName ./magiccube_step7_bounded.root
+/gate/output/tree/hits/enable
+
+/gate/output/tree/addCollection Singles_mc_gagg_ee
+/gate/output/tree/addCollection Singles_mc_gagg_eo
+/gate/output/tree/addCollection Singles_mc_gagg_oe
+/gate/output/tree/addCollection Singles_mc_gagg_oo

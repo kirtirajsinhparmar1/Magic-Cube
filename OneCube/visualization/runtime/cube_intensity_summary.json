@@ -1,0 +1,30 @@
+{
+  "bin_shape": [
+    8,
+    8,
+    8
+  ],
+  "classification": "derived aggregation from exact Hits positions and edep/occupancy",
+  "cube_lower_mm": [
+    -1.0,
+    -1.0,
+    -1.0
+  ],
+  "cube_upper_mm": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "hits_in_cube": 233,
+  "hits_outside_or_nonfinite": 0,
+  "maximum_voxel_value": 0.5600000023841858,
+  "position_branches": {
+    "x": "posX",
+    "y": "posY",
+    "z": "posZ"
+  },
+  "source": "/vscratch/grp-rutaoyao/Kirtiraj/Magic Cube/mcsim/OneCube/runtime/merged/hits.root",
+  "total_weight": 32.62000013887882,
+  "tree_name": "tree",
+  "weighting": "deposited energy branch edep [MeV]"
+}

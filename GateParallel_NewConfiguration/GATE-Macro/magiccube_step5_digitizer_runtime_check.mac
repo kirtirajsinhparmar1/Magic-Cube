@@ -1,0 +1,42 @@
+# Magic-Cube Step-5 bounded digitizer runtime validation.
+# This is the validated external raw-Hits macro plus only the unchanged
+# production digitizer and Singles output request.
+
+/gate/geometry/setMaterialDatabase GateMaterials.db
+
+/gate/world/geometry/setXLength 200.0 mm
+/gate/world/geometry/setYLength 200.0 mm
+/gate/world/geometry/setZLength 200.0 mm
+/gate/world/setMaterial Air
+
+/control/execute magiccube_production_geometry.mac
+/control/execute magiccube_production_system.mac
+/control/execute magiccube_production_physics.mac
+
+/gate/run/initialize
+
+/control/execute magiccube_production_digitizer.mac
+
+# This source/RNG/timing block is copied from the validated external Hits test.
+/gate/source/addSource external_140kev_smoke gps
+/gate/source/external_140kev_smoke/gps/particle gamma
+/gate/source/external_140kev_smoke/gps/pos/type Point
+/gate/source/external_140kev_smoke/gps/pos/centre 0.0 0.0 -66.0 mm
+/gate/source/external_140kev_smoke/gps/ang/type iso
+/gate/source/external_140kev_smoke/gps/ene/type Mono
+/gate/source/external_140kev_smoke/gps/ene/mono 140.0 keV
+/gate/source/external_140kev_smoke/setActivity 20000.0 becquerel
+
+/gate/random/setEngineName MersenneTwister
+/gate/application/setTimeStart 0.0 s
+/gate/application/setTimeStop 1.0 s
+/gate/application/setTimeSlice 1.0 s
+
+/gate/output/tree/enable
+/gate/output/tree/addFileName /vscratch/grp-rutaoyao/Kirtiraj/Magic Cube/runtime_validation/step5_digitizer/magiccube_step5_digitizer.root
+/gate/output/tree/hits/enable
+# The four SinglesDigitizer managers expose their per-family Singles output
+# under this shared collection name.
+/gate/output/tree/addCollection Singles
+
+/gate/application/startDAQ

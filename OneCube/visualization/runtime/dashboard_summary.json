@@ -1,0 +1,10 @@
+{
+  "classification": "dashboard reads exact existing ROOT inspection and PPDF/system-matrix products",
+  "gate_exit_code": "0",
+  "hits": 233,
+  "ppdf": 1.0,
+  "raw_singles_count": 233,
+  "response_cps_per_MBq": 62.972972972972975,
+  "response_per_Bq_s": 6.297297297297298e-05,
+  "singles": 233
+}

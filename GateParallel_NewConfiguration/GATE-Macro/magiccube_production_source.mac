@@ -1,0 +1,44 @@
+# Magic-Cube production source
+#
+# Faithful port of the active source.mac.  The only geometry-forced change is
+# the rigid axis mapping from the original detector/source axis to the frozen
+# Magic-Cube convention:
+#
+#   (x_orig, y_orig, z_orig) -> (-z_mc, y_mc, x_mc)
+#
+# Thus the original source centre (-187.5, 0, 0) mm maps to
+# (0, 0, -187.5) mm, and the original local source-plane axes map to
+# positional rot1=(0,0,1) and rot2=(0,1,0).  The angular frame is oriented
+# toward the Magic-Cube detector with rot1=(0,0,-1) and rot2=(0,1,0), so
+# the original central local direction at phi=180 deg maps to +Z.  All
+# source statistics and angular values remain unchanged.
+
+/gate/source/addSource source1
+/gate/source/source1/gps/particle gamma
+
+/gate/source/source1/gps/energytype   Mono
+/gate/source/source1/gps/monoenergy   140.0 keV
+/gate/source/source1/setActivity      0.0001 Ci
+
+# Original centre (-187.5, 0, 0) mm transformed onto the Magic-Cube -z side.
+/gate/source/source1/gps/centre  0. 0. -187.5 mm
+/gate/source/source1/gps/type    Plane
+/gate/source/source1/gps/shape   Rectangle
+/gate/source/source1/gps/halfx   250 mm
+/gate/source/source1/gps/halfy   250 mm
+
+# Rotate both GPS coordinate frames with the detector-axis mapping.  The
+# positional frame rotates the plane; the angular frame carries the same
+# rigid transformation without changing the numerical theta/phi limits.
+/gate/source/source1/gps/pos/rot1   0. 0. 1.
+/gate/source/source1/gps/pos/rot2   0. 1. 0.
+/gate/source/source1/gps/ang/rot1   0. 0. -1.
+/gate/source/source1/gps/ang/rot2   0. 1. 0.
+
+/gate/source/source1/gps/angtype iso
+/gate/source/source1/gps/mintheta 90 deg
+/gate/source/source1/gps/maxtheta 90 deg
+/gate/source/source1/gps/minphi   150 deg
+/gate/source/source1/gps/maxphi   210 deg
+
+/gate/source/list

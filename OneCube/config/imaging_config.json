@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "inputs": {
+    "system_matrix": "../results/system_matrix/system_matrix.npy",
+    "system_matrix_metadata": "../results/system_matrix/system_matrix_metadata.json",
+    "system_matrix_table": "../results/system_matrix/system_matrix.csv",
+    "scanner_config": "onecube_config.json"
+  },
+  "grid": {
+    "image_shape": [1, 1, 1],
+    "voxel_ordering": "system_matrix_metadata.source_ids; last axis varies fastest",
+    "source_coordinates_are_authoritative": true
+  },
+  "response": {
+    "relative_threshold": 0.01,
+    "angular_plane_axes": [0, 2],
+    "angular_bins": 360,
+    "fwhm_axis": 0,
+    "fwhm_minimum_samples": 3
+  },
+  "phantom": {
+    "pattern": "uniform",
+    "total_activity_bq": 3700000.0
+  },
+  "projection": {
+    "poisson_seed": 1402026
+  },
+  "mlem": {
+    "iterations": 40,
+    "epsilon": 1e-12,
+    "initial_value_bq": 1.0,
+    "relative_change_stop": null,
+    "post_filter": {
+      "enabled": false,
+      "method": "none",
+      "sigma_voxels": 0.5
+    }
+  },
+  "identifiability": {
+    "minimum_spatial_voxels": 2,
+    "minimum_distinct_angular_bins": 2
+  },
+  "outputs": {
+    "root": "../results/imaging"
+  }
+}

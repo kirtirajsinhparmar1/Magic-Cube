@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "full_array_max_concurrent": 16,
+  "full_worker_shards": 8,
+  "full_worker_walltime": "24:00:00",
+  "seed_base": 1000001,
+  "root_step_size": "16 MB",
+  "plot_detector_ids": [0, 512, 1024, 1536],
+  "plot_policy": "Set plot_detector_ids to all for a 2048-detector plotting array; simulation always covers the complete source grid.",
+  "raw_root_policy": "Preserve all ROOT shards; never automatically delete.",
+  "exposure_policy": "Sum replicate counts and acquisition durations per source; activity must agree. c_ij = n_ij / (summed acquisition_s * activity_bq).",
+  "resource_note": "Full GATE production uses 1 CPU / 4G per shard worker, with 8 workers by default (32G aggregate). full_worker_walltime is passed by par_full.sh; confirm it is allowed by the general-compute partition. full_array_max_concurrent remains the configurable ceiling for the small heatmap array."
+}

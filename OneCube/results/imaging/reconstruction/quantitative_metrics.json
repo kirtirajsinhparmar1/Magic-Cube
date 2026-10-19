@@ -1,0 +1,8 @@
+{
+  "data_source": "synthetic Poisson forward projection using OneCube point-source response; not measured phantom data",
+  "mse_bq2": 20425684761.18553,
+  "rmse_bq": 142918.4549356224,
+  "normalized_error": 0.03862660944206011,
+  "correlation": null,
+  "activity_recovery_ratio": 1.0386266094420602
+}

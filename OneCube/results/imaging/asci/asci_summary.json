@@ -1,0 +1,16 @@
+{
+  "angular_bins": 360,
+  "valid_measurements": 1,
+  "occupied_angular_bins": 1,
+  "mean_fraction": 0.002777777777777778,
+  "mean_percent": 0.2777777777777778,
+  "minimum_percent": 0.2777777777777778,
+  "maximum_percent": 0.2777777777777778,
+  "voxel_ids": [
+    0
+  ],
+  "view_angles_deg": [
+    270.0
+  ],
+  "method": "fraction of configured angular bins with at least one thresholded response covering each voxel"
+}

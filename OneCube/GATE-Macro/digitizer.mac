@@ -1,0 +1,12 @@
+# One Singles chain for the onecube_crystal sensitive detector.
+/gate/digitizerMgr/onecube_crystal/SinglesDigitizer/Singles/insert adder
+/gate/digitizerMgr/onecube_crystal/SinglesDigitizer/Singles/insert energyResolution
+/gate/digitizerMgr/onecube_crystal/SinglesDigitizer/Singles/energyResolution/fwhm 0.10
+/gate/digitizerMgr/onecube_crystal/SinglesDigitizer/Singles/energyResolution/energyOfReference 140 keV
+/gate/digitizerMgr/onecube_crystal/SinglesDigitizer/Singles/insert spatialResolution
+/gate/digitizerMgr/onecube_crystal/SinglesDigitizer/Singles/spatialResolution/fwhm 1.0 mm
+/gate/digitizerMgr/onecube_crystal/SinglesDigitizer/Singles/spatialResolution/confineInsideOfSmallestElement true
+/gate/digitizerMgr/onecube_crystal/SinglesDigitizer/Singles/spatialResolution/verbose 0
+/gate/digitizerMgr/onecube_crystal/SinglesDigitizer/Singles/insert energyFraming
+/gate/digitizerMgr/onecube_crystal/SinglesDigitizer/Singles/energyFraming/setMin 120 keV
+/gate/digitizerMgr/onecube_crystal/SinglesDigitizer/Singles/energyFraming/setMax 160 keV

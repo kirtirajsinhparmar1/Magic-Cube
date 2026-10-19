@@ -1,0 +1,15 @@
+{
+  "central_voxel_index": 0,
+  "central": 6.297297297297298e-05,
+  "mean": 6.297297297297298e-05,
+  "minimum": 6.297297297297298e-05,
+  "maximum": 6.297297297297298e-05,
+  "voxel_count": 1,
+  "units": "cps/Bq",
+  "central_cps_per_mbq": 62.972972972972975,
+  "mean_cps_per_mbq": 62.972972972972975,
+  "minimum_cps_per_mbq": 62.972972972972975,
+  "maximum_cps_per_mbq": 62.972972972972975,
+  "raw_calibration_singles_count_sum": 233.0,
+  "raw_count_interpretation": "observed singles used to form the response calibration; not a spatial sensitivity map"
+}
