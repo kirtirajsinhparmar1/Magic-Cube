@@ -1,0 +1,29 @@
+# Generated task macro using frozen OneCube geometry, physics, and digitizer assets.
+/gate/geometry/setMaterialDatabase GateMaterials.db
+/control/execute geometry.mac
+/control/execute plate.mac
+/control/execute system.mac
+/control/execute physics.mac
+/gate/cylindricalPET/placement/setTranslation 0.000000 0.000000 0.000000 mm
+/gate/run/initialize
+/control/execute digitizer.mac
+/gate/source/addSource source_000
+/gate/source/source_000/gps/particle gamma
+/gate/source/source_000/gps/pos/type Point
+/gate/source/source_000/gps/pos/centre 30.00000000 20.00000000 -51.00000000 mm
+/gate/source/source_000/gps/ang/type iso
+/gate/source/source_000/gps/ene/type Mono
+/gate/source/source_000/gps/ene/mono 140.000000 keV
+/gate/source/source_000/setActivity 3700000 Bq
+/gate/source/list
+/gate/random/setEngineName MersenneTwister
+/gate/random/setEngineSeed 713025
+/control/execute verbose.mac
+/gate/output/tree/enable
+/gate/output/tree/addFileName /vscratch/grp-rutaoyao/Kirtiraj/Magic Cube/mcsim/OneCubeImagingFinal/runtime/calibration/root/task_025.root
+/gate/output/tree/hits/enable
+/gate/output/tree/addCollection Singles
+/gate/application/setTimeStart 0 s
+/gate/application/setTimeStop 10 s
+/gate/application/setTimeSlice 1 s
+/gate/application/startDAQ

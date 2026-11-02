@@ -1,0 +1,13 @@
+{
+  "absolute_response_units": "cps/Bq",
+  "count_operator_units": "expected counts/Bq for configured phantom exposure",
+  "matrix_orientation": "R[i,j]: i=independent detector-pose measurement row; j=row-major source/image voxel",
+  "matrix_shape": [
+    49,
+    49
+  ],
+  "nonzero_response_fraction": 1.0,
+  "raw_count_note": "raw calibration counts from 28 GATE conditions are expanded only by documented D4 symmetry; matrix provenance gives the measured task id for each element",
+  "row_normalized_ppdf": "each nonzero response row divided by its own sum; retained for visualization, never used for MLEM",
+  "zero_response_elements": 0
+}

@@ -1,0 +1,21 @@
+{
+  "central_cps_per_bq": 0.003160675675675675,
+  "central_cps_per_mbq": 3160.675675675675,
+  "central_voxel_index": 24,
+  "definition": "S_j = sum_i R_ij over the configured physical detector-pose measurements",
+  "maximum_cps_per_bq": 0.003160675675675675,
+  "maximum_cps_per_mbq": 3160.675675675675,
+  "mean_cps_per_bq": 0.0029802520683949248,
+  "mean_cps_per_mbq": 2980.2520683949247,
+  "minimum_cps_per_bq": 0.0027835405405405396,
+  "minimum_cps_per_mbq": 2783.5405405405395,
+  "pose_exposure_s": 490.0,
+  "scan_average_central_cps_per_bq": 6.450358521787094e-05,
+  "scan_average_definition": "sum_i(T_i*R_ij) / sum_i(T_i) for the sequential scan protocol",
+  "scan_average_mean_cps_per_bq": 6.08214707835699e-05,
+  "scan_average_mean_cps_per_mbq": 60.8214707835699,
+  "sum_of_pose_rate_cps_per_bq_mean": 0.0029802520683949248,
+  "total_scan_counts_per_bq_mean": 0.02980252068394926,
+  "units": "cps/Bq",
+  "voxel_count": 49
+}

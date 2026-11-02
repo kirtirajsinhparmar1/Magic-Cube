@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "project_name": "OneCubeImagingFinal",
+  "baseline_project_relative": "../OneCube",
+  "baseline": {
+    "detector_id": 0,
+    "detector_material": "GAGG",
+    "detector_size_mm": [2.0, 2.0, 2.0],
+    "detector_center_mm": [0.0, 0.0, 0.0],
+    "source_energy_keV": 140.0,
+    "source_activity_Bq": 3700000.0,
+    "source_z_mm": -51.0,
+    "validated_center_surface_gap_mm": 50.0,
+    "baseline_acquisition_s": 1.0,
+    "baseline_hits": 233,
+    "baseline_singles": 233,
+    "baseline_sensitivity_cps_per_MBq": 62.972972972972975,
+    "physics_macro": "GATE-Macro/physics.mac",
+    "geometry_macros": [
+      "GATE-Macro/geometry.mac",
+      "GATE-Macro/plate.mac",
+      "GATE-Macro/system.mac",
+      "GATE-Macro/physics.mac",
+      "GATE-Macro/digitizer.mac"
+    ],
+    "material_database": "GATE-Macro/GateMaterials.db",
+    "gate_working_directory": "GATE-Macro"
+  },
+  "image": {
+    "nx": 7,
+    "ny": 7,
+    "voxel_pitch_mm": 5.0,
+    "voxel_size_mm": [5.0, 5.0],
+    "plane_z_mm": -51.0,
+    "voxel_order": "row-major by y_index ascending, then x_index ascending",
+    "fov_edge_to_edge_mm": [35.0, 35.0]
+  },
+  "acquisition": {
+    "pose_nx": 7,
+    "pose_ny": 7,
+    "pose_pitch_mm": 5.0,
+    "detector_z_mm": 0.0,
+    "orientation": "fixed; no rotation",
+    "calibration_activity_Bq": 3700000.0,
+    "calibration_exposure_s": 10.0,
+    "phantom_activity_total_Bq": 3700000.0,
+    "phantom_exposure_s": 10.0,
+    "energy_window_keV": [120.0, 160.0],
+    "calibration_symmetry": "D4 lateral reflection/swap of a fixed-axis 2x2 mm square GAGG crystal; detector and source translated in homogeneous air",
+    "calibration_symmetry_enabled": true,
+    "max_relative_offset_index": 6,
+    "seed_base_calibration": 713000,
+    "seed_base_phantom": 971000
+  },
+  "phantom": {
+    "pattern": "four spatially separated, independently weighted hot spots on a low uniform background",
+    "background_fraction_of_reference": 0.05,
+    "hotspot_centers_mm": [[-10.0, 0.0], [0.0, 10.0], [10.0, 0.0], [0.0, -10.0]],
+    "hotspot_sigma_mm": 3.2,
+    "hotspot_relative_weights": [1.0, 0.75, 1.25, 0.9],
+    "total_activity_Bq": 3700000.0,
+    "source_model": "one isotropic 140 keV point source per image voxel; per-voxel activities sum to configured total activity"
+  },
+  "analysis": {
+    "response_mask_fraction_of_row_peak": 0.5,
+    "fwhm_half_max_fraction": 0.5,
+    "asci_status": "NOT PHYSICALLY APPLICABLE",
+    "asci_reason": "A bare uncollimated crystal has no beam-direction encoding. Translation-pose azimuth is not a projection angle and is not used as ASCI.",
+    "ji_formula": "(mean_sensitivity_cps_per_bq / mean_fwhm_mm^2) * (asci_percent / 100)",
+    "svd_relative_tolerance": 1e-6,
+    "numerical_identifiability_condition_screen": 100000000.0
+  },
+  "reconstruction": {
+    "iterations": 100,
+    "epsilon": 1e-12,
+    "initialization": "uniform over observable voxels with total equal to phantom activity",
+    "relative_change_stop": null,
+    "stop_patience": 3,
+    "post_filter_sigma_voxels": null,
+    "poisson_seed": 20261019,
+    "measurement_mode": "accepted Singles tree entries per independent physical detector pose"
+  },
+  "resources": {
+    "gate_workers": 4,
+    "cpus_per_worker": 1,
+    "memory_per_worker_gb": 8,
+    "walltime": "24:00:00",
+    "partition": "general-compute",
+    "qos": "general-compute",
+    "calibration_tasks": 28,
+    "phantom_tasks": 49,
+    "expected_gate_invocations": 77,
+    "estimated_primary_histories": 2849000000,
+    "baseline_exposure_equivalents": 770,
+    "runtime_estimate_note": "Planning estimate from 77 tasks x 3.7 MBq x 10 s. Existing baseline records counts but no reliable elapsed-time benchmark; wall time is therefore a Slurm limit, not a claimed runtime."
+  },
+  "environment": {
+    "module_commands": [
+      "module load gcc/11.2.0 geant4/11.2.1 geant4-data/11.2",
+      "export GEANT4_DATA_DIR=$EBROOTGEANT4MINDATA",
+      "module load gcc/11.2.0 openmpi/4.1.1 gate/9.4 geant4-data/11.2"
+    ],
+    "python": "/user/kmparmar/venv/bin/python",
+    "python_env_policy": "invoke with env -u PYTHONPATH"
+  },
+  "outputs": {
+    "runtime_dir": "runtime",
+    "results_dir": "results",
+    "primary_report": "ONECUBE_IMAGING_FINAL_REPORT.md"
+  }
+}

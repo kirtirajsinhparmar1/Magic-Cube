@@ -1,0 +1,413 @@
+# Generated task macro using frozen OneCube geometry, physics, and digitizer assets.
+/gate/geometry/setMaterialDatabase GateMaterials.db
+/control/execute geometry.mac
+/control/execute plate.mac
+/control/execute system.mac
+/control/execute physics.mac
+/gate/cylindricalPET/placement/setTranslation -5.000000 -5.000000 0.000000 mm
+/gate/run/initialize
+/control/execute digitizer.mac
+/gate/source/addSource source_000
+/gate/source/source_000/gps/particle gamma
+/gate/source/source_000/gps/pos/type Point
+/gate/source/source_000/gps/pos/centre -15.00000000 -15.00000000 -51.00000000 mm
+/gate/source/source_000/gps/ang/type iso
+/gate/source/source_000/gps/ene/type Mono
+/gate/source/source_000/gps/ene/mono 140.000000 keV
+/gate/source/source_000/setActivity 14860.0490543 Bq
+/gate/source/addSource source_001
+/gate/source/source_001/gps/particle gamma
+/gate/source/source_001/gps/pos/type Point
+/gate/source/source_001/gps/pos/centre -10.00000000 -15.00000000 -51.00000000 mm
+/gate/source/source_001/gps/ang/type iso
+/gate/source/source_001/gps/ene/type Mono
+/gate/source/source_001/gps/ene/mono 140.000000 keV
+/gate/source/source_001/setActivity 15459.9653996 Bq
+/gate/source/addSource source_002
+/gate/source/source_002/gps/particle gamma
+/gate/source/source_002/gps/pos/type Point
+/gate/source/source_002/gps/pos/centre -5.00000000 -15.00000000 -51.00000000 mm
+/gate/source/source_002/gps/ang/type iso
+/gate/source/source_002/gps/ene/type Mono
+/gate/source/source_002/gps/ene/mono 140.000000 keV
+/gate/source/source_002/setActivity 38135.394393 Bq
+/gate/source/addSource source_003
+/gate/source/source_003/gps/particle gamma
+/gate/source/source_003/gps/pos/type Point
+/gate/source/source_003/gps/pos/centre 0.00000000 -15.00000000 -51.00000000 mm
+/gate/source/source_003/gps/ang/type iso
+/gate/source/source_003/gps/ene/type Mono
+/gate/source/source_003/gps/ene/mono 140.000000 keV
+/gate/source/source_003/setActivity 93755.2589683 Bq
+/gate/source/addSource source_004
+/gate/source/source_004/gps/particle gamma
+/gate/source/source_004/gps/pos/type Point
+/gate/source/source_004/gps/pos/centre 5.00000000 -15.00000000 -51.00000000 mm
+/gate/source/source_004/gps/ang/type iso
+/gate/source/source_004/gps/ene/type Mono
+/gate/source/source_004/gps/ene/mono 140.000000 keV
+/gate/source/source_004/setActivity 38135.7654466 Bq
+/gate/source/addSource source_005
+/gate/source/source_005/gps/particle gamma
+/gate/source/source_005/gps/pos/type Point
+/gate/source/source_005/gps/pos/centre 10.00000000 -15.00000000 -51.00000000 mm
+/gate/source/source_005/gps/ang/type iso
+/gate/source/source_005/gps/ene/type Mono
+/gate/source/source_005/gps/ene/mono 140.000000 keV
+/gate/source/source_005/setActivity 15461.2231838 Bq
+/gate/source/addSource source_006
+/gate/source/source_006/gps/particle gamma
+/gate/source/source_006/gps/pos/type Point
+/gate/source/source_006/gps/pos/centre 15.00000000 -15.00000000 -51.00000000 mm
+/gate/source/source_006/gps/ang/type iso
+/gate/source/source_006/gps/ene/type Mono
+/gate/source/source_006/gps/ene/mono 140.000000 keV
+/gate/source/source_006/setActivity 14860.4201291 Bq
+/gate/source/addSource source_007
+/gate/source/source_007/gps/particle gamma
+/gate/source/source_007/gps/pos/type Point
+/gate/source/source_007/gps/pos/centre -15.00000000 -10.00000000 -51.00000000 mm
+/gate/source/source_007/gps/ang/type iso
+/gate/source/source_007/gps/ene/type Mono
+/gate/source/source_007/gps/ene/mono 140.000000 keV
+/gate/source/source_007/setActivity 15525.8739945 Bq
+/gate/source/addSource source_008
+/gate/source/source_008/gps/particle gamma
+/gate/source/source_008/gps/pos/type Point
+/gate/source/source_008/gps/pos/centre -10.00000000 -10.00000000 -51.00000000 mm
+/gate/source/source_008/gps/ang/type iso
+/gate/source/source_008/gps/ene/type Mono
+/gate/source/source_008/gps/ene/mono 140.000000 keV
+/gate/source/source_008/setActivity 19134.2647029 Bq
+/gate/source/addSource source_009
+/gate/source/source_009/gps/particle gamma
+/gate/source/source_009/gps/pos/type Point
+/gate/source/source_009/gps/pos/centre -5.00000000 -10.00000000 -51.00000000 mm
+/gate/source/source_009/gps/ang/type iso
+/gate/source/source_009/gps/ene/type Mono
+/gate/source/source_009/gps/ene/mono 140.000000 keV
+/gate/source/source_009/setActivity 94419.3381563 Bq
+/gate/source/addSource source_010
+/gate/source/source_010/gps/particle gamma
+/gate/source/source_010/gps/pos/type Point
+/gate/source/source_010/gps/pos/centre 0.00000000 -10.00000000 -51.00000000 mm
+/gate/source/source_010/gps/ang/type iso
+/gate/source/source_010/gps/ene/type Mono
+/gate/source/source_010/gps/ene/mono 140.000000 keV
+/gate/source/source_010/setActivity 282325.71969 Bq
+/gate/source/addSource source_011
+/gate/source/source_011/gps/particle gamma
+/gate/source/source_011/gps/pos/type Point
+/gate/source/source_011/gps/pos/centre 5.00000000 -10.00000000 -51.00000000 mm
+/gate/source/source_011/gps/ang/type iso
+/gate/source/source_011/gps/ene/type Mono
+/gate/source/source_011/gps/ene/mono 140.000000 keV
+/gate/source/source_011/setActivity 94585.3578992 Bq
+/gate/source/addSource source_012
+/gate/source/source_012/gps/particle gamma
+/gate/source/source_012/gps/pos/type Point
+/gate/source/source_012/gps/pos/centre 10.00000000 -10.00000000 -51.00000000 mm
+/gate/source/source_012/gps/ang/type iso
+/gate/source/source_012/gps/ene/type Mono
+/gate/source/source_012/gps/ene/mono 140.000000 keV
+/gate/source/source_012/setActivity 19697.0325699 Bq
+/gate/source/addSource source_013
+/gate/source/source_013/gps/particle gamma
+/gate/source/source_013/gps/pos/type Point
+/gate/source/source_013/gps/pos/centre 15.00000000 -10.00000000 -51.00000000 mm
+/gate/source/source_013/gps/ang/type iso
+/gate/source/source_013/gps/ene/type Mono
+/gate/source/source_013/gps/ene/mono 140.000000 keV
+/gate/source/source_013/setActivity 15691.9032659 Bq
+/gate/source/addSource source_014
+/gate/source/source_014/gps/particle gamma
+/gate/source/source_014/gps/pos/type Point
+/gate/source/source_014/gps/pos/centre -15.00000000 -5.00000000 -51.00000000 mm
+/gate/source/source_014/gps/ang/type iso
+/gate/source/source_014/gps/ene/type Mono
+/gate/source/source_014/gps/ene/mono 140.000000 keV
+/gate/source/source_014/setActivity 40721.5438207 Bq
+/gate/source/addSource source_015
+/gate/source/source_015/gps/particle gamma
+/gate/source/source_015/gps/pos/type Point
+/gate/source/source_015/gps/pos/centre -10.00000000 -5.00000000 -51.00000000 mm
+/gate/source/source_015/gps/ang/type iso
+/gate/source/source_015/gps/ene/type Mono
+/gate/source/source_015/gps/ene/mono 140.000000 keV
+/gate/source/source_015/setActivity 103119.345793 Bq
+/gate/source/addSource source_016
+/gate/source/source_016/gps/particle gamma
+/gate/source/source_016/gps/pos/type Point
+/gate/source/source_016/gps/pos/centre -5.00000000 -5.00000000 -51.00000000 mm
+/gate/source/source_016/gps/ang/type iso
+/gate/source/source_016/gps/ene/type Mono
+/gate/source/source_016/gps/ene/mono 140.000000 keV
+/gate/source/source_016/setActivity 63999.8575877 Bq
+/gate/source/addSource source_017
+/gate/source/source_017/gps/particle gamma
+/gate/source/source_017/gps/pos/type Point
+/gate/source/source_017/gps/pos/centre 0.00000000 -5.00000000 -51.00000000 mm
+/gate/source/source_017/gps/ang/type iso
+/gate/source/source_017/gps/ene/type Mono
+/gate/source/source_017/gps/ene/mono 140.000000 keV
+/gate/source/source_017/setActivity 95253.2100068 Bq
+/gate/source/addSource source_018
+/gate/source/source_018/gps/particle gamma
+/gate/source/source_018/gps/pos/type Point
+/gate/source/source_018/gps/pos/centre 5.00000000 -5.00000000 -51.00000000 mm
+/gate/source/source_018/gps/ang/type iso
+/gate/source/source_018/gps/ene/type Mono
+/gate/source/source_018/gps/ene/mono 140.000000 keV
+/gate/source/source_018/setActivity 70465.2312633 Bq
+/gate/source/addSource source_019
+/gate/source/source_019/gps/particle gamma
+/gate/source/source_019/gps/pos/type Point
+/gate/source/source_019/gps/pos/centre 10.00000000 -5.00000000 -51.00000000 mm
+/gate/source/source_019/gps/ang/type iso
+/gate/source/source_019/gps/ene/type Mono
+/gate/source/source_019/gps/ene/mono 140.000000 keV
+/gate/source/source_019/setActivity 125035.441367 Bq
+/gate/source/addSource source_020
+/gate/source/source_020/gps/particle gamma
+/gate/source/source_020/gps/pos/type Point
+/gate/source/source_020/gps/pos/centre 15.00000000 -5.00000000 -51.00000000 mm
+/gate/source/source_020/gps/ang/type iso
+/gate/source/source_020/gps/ene/type Mono
+/gate/source/source_020/gps/ene/mono 140.000000 keV
+/gate/source/source_020/setActivity 47187.2885711 Bq
+/gate/source/addSource source_021
+/gate/source/source_021/gps/particle gamma
+/gate/source/source_021/gps/pos/type Point
+/gate/source/source_021/gps/pos/centre -15.00000000 0.00000000 -51.00000000 mm
+/gate/source/source_021/gps/ang/type iso
+/gate/source/source_021/gps/ene/type Mono
+/gate/source/source_021/gps/ene/mono 140.000000 keV
+/gate/source/source_021/setActivity 102521.674358 Bq
+/gate/source/addSource source_022
+/gate/source/source_022/gps/particle gamma
+/gate/source/source_022/gps/pos/type Point
+/gate/source/source_022/gps/pos/centre -10.00000000 0.00000000 -51.00000000 mm
+/gate/source/source_022/gps/ang/type iso
+/gate/source/source_022/gps/ene/type Mono
+/gate/source/source_022/gps/ene/mono 140.000000 keV
+/gate/source/source_022/setActivity 312029.945915 Bq
+/gate/source/addSource source_023
+/gate/source/source_023/gps/particle gamma
+/gate/source/source_023/gps/pos/type Point
+/gate/source/source_023/gps/pos/centre -5.00000000 0.00000000 -51.00000000 mm
+/gate/source/source_023/gps/ang/type iso
+/gate/source/source_023/gps/ene/type Mono
+/gate/source/source_023/gps/ene/mono 140.000000 keV
+/gate/source/source_023/setActivity 103623.693582 Bq
+/gate/source/addSource source_024
+/gate/source/source_024/gps/particle gamma
+/gate/source/source_024/gps/pos/type Point
+/gate/source/source_024/gps/pos/centre 0.00000000 0.00000000 -51.00000000 mm
+/gate/source/source_024/gps/ang/type iso
+/gate/source/source_024/gps/ene/type Mono
+/gate/source/source_024/gps/ene/mono 140.000000 keV
+/gate/source/source_024/setActivity 23636.4076382 Bq
+/gate/source/addSource source_025
+/gate/source/source_025/gps/particle gamma
+/gate/source/source_025/gps/pos/type Point
+/gate/source/source_025/gps/pos/centre 5.00000000 0.00000000 -51.00000000 mm
+/gate/source/source_025/gps/ang/type iso
+/gate/source/source_025/gps/ene/type Mono
+/gate/source/source_025/gps/ene/mono 140.000000 keV
+/gate/source/source_025/setActivity 125538.531444 Bq
+/gate/source/addSource source_026
+/gate/source/source_026/gps/particle gamma
+/gate/source/source_026/gps/pos/type Point
+/gate/source/source_026/gps/pos/centre 10.00000000 0.00000000 -51.00000000 mm
+/gate/source/source_026/gps/ang/type iso
+/gate/source/source_026/gps/ene/type Mono
+/gate/source/source_026/gps/ene/mono 140.000000 keV
+/gate/source/source_026/setActivity 386316.090098 Bq
+/gate/source/addSource source_027
+/gate/source/source_027/gps/particle gamma
+/gate/source/source_027/gps/pos/type Point
+/gate/source/source_027/gps/pos/centre 15.00000000 0.00000000 -51.00000000 mm
+/gate/source/source_027/gps/ang/type iso
+/gate/source/source_027/gps/ene/type Mono
+/gate/source/source_027/gps/ene/mono 140.000000 keV
+/gate/source/source_027/setActivity 124437.770004 Bq
+/gate/source/addSource source_028
+/gate/source/source_028/gps/particle gamma
+/gate/source/source_028/gps/pos/type Point
+/gate/source/source_028/gps/pos/centre -15.00000000 5.00000000 -51.00000000 mm
+/gate/source/source_028/gps/ang/type iso
+/gate/source/source_028/gps/ene/type Mono
+/gate/source/source_028/gps/ene/mono 140.000000 keV
+/gate/source/source_028/setActivity 40721.3211885 Bq
+/gate/source/addSource source_029
+/gate/source/source_029/gps/particle gamma
+/gate/source/source_029/gps/pos/type Point
+/gate/source/source_029/gps/pos/centre -10.00000000 5.00000000 -51.00000000 mm
+/gate/source/source_029/gps/ang/type iso
+/gate/source/source_029/gps/ene/type Mono
+/gate/source/source_029/gps/ene/mono 140.000000 keV
+/gate/source/source_029/setActivity 103019.733948 Bq
+/gate/source/addSource source_030
+/gate/source/source_030/gps/particle gamma
+/gate/source/source_030/gps/pos/type Point
+/gate/source/source_030/gps/pos/centre -5.00000000 5.00000000 -51.00000000 mm
+/gate/source/source_030/gps/ang/type iso
+/gate/source/source_030/gps/ene/type Mono
+/gate/source/source_030/gps/ene/mono 140.000000 keV
+/gate/source/source_030/setActivity 60120.6333823 Bq
+/gate/source/addSource source_031
+/gate/source/source_031/gps/particle gamma
+/gate/source/source_031/gps/pos/type Point
+/gate/source/source_031/gps/pos/centre 0.00000000 5.00000000 -51.00000000 mm
+/gate/source/source_031/gps/ang/type iso
+/gate/source/source_031/gps/ene/type Mono
+/gate/source/source_031/gps/ene/mono 140.000000 keV
+/gate/source/source_031/setActivity 82104.3072897 Bq
+/gate/source/addSource source_032
+/gate/source/source_032/gps/particle gamma
+/gate/source/source_032/gps/pos/type Point
+/gate/source/source_032/gps/pos/centre 5.00000000 5.00000000 -51.00000000 mm
+/gate/source/source_032/gps/ang/type iso
+/gate/source/source_032/gps/ene/type Mono
+/gate/source/source_032/gps/ene/mono 140.000000 keV
+/gate/source/source_032/setActivity 66586.0070579 Bq
+/gate/source/addSource source_033
+/gate/source/source_033/gps/particle gamma
+/gate/source/source_033/gps/pos/type Point
+/gate/source/source_033/gps/pos/centre 10.00000000 5.00000000 -51.00000000 mm
+/gate/source/source_033/gps/ang/type iso
+/gate/source/source_033/gps/ene/type Mono
+/gate/source/source_033/gps/ene/mono 140.000000 keV
+/gate/source/source_033/setActivity 124935.829521 Bq
+/gate/source/addSource source_034
+/gate/source/source_034/gps/particle gamma
+/gate/source/source_034/gps/pos/type Point
+/gate/source/source_034/gps/pos/centre 15.00000000 5.00000000 -51.00000000 mm
+/gate/source/source_034/gps/ang/type iso
+/gate/source/source_034/gps/ene/type Mono
+/gate/source/source_034/gps/ene/mono 140.000000 keV
+/gate/source/source_034/setActivity 47187.065939 Bq
+/gate/source/addSource source_035
+/gate/source/source_035/gps/particle gamma
+/gate/source/source_035/gps/pos/type Point
+/gate/source/source_035/gps/pos/centre -15.00000000 10.00000000 -51.00000000 mm
+/gate/source/source_035/gps/ang/type iso
+/gate/source/source_035/gps/ene/type Mono
+/gate/source/source_035/gps/ene/mono 140.000000 keV
+/gate/source/source_035/setActivity 15525.119324 Bq
+/gate/source/addSource source_036
+/gate/source/source_036/gps/particle gamma
+/gate/source/source_036/gps/pos/type Point
+/gate/source/source_036/gps/pos/centre -10.00000000 10.00000000 -51.00000000 mm
+/gate/source/source_036/gps/ang/type iso
+/gate/source/source_036/gps/ene/type Mono
+/gate/source/source_036/gps/ene/mono 140.000000 keV
+/gate/source/source_036/setActivity 18796.6039828 Bq
+/gate/source/addSource source_037
+/gate/source/source_037/gps/particle gamma
+/gate/source/source_037/gps/pos/type Point
+/gate/source/source_037/gps/pos/centre -5.00000000 10.00000000 -51.00000000 mm
+/gate/source/source_037/gps/ang/type iso
+/gate/source/source_037/gps/ene/type Mono
+/gate/source/source_037/gps/ene/mono 140.000000 keV
+/gate/source/source_037/setActivity 81269.680812 Bq
+/gate/source/addSource source_038
+/gate/source/source_038/gps/particle gamma
+/gate/source/source_038/gps/pos/type Point
+/gate/source/source_038/gps/pos/centre 0.00000000 10.00000000 -51.00000000 mm
+/gate/source/source_038/gps/ang/type iso
+/gate/source/source_038/gps/ene/type Mono
+/gate/source/source_038/gps/ene/mono 140.000000 keV
+/gate/source/source_038/setActivity 237754.03318 Bq
+/gate/source/addSource source_039
+/gate/source/source_039/gps/particle gamma
+/gate/source/source_039/gps/pos/type Point
+/gate/source/source_039/gps/pos/centre 5.00000000 10.00000000 -51.00000000 mm
+/gate/source/source_039/gps/ang/type iso
+/gate/source/source_039/gps/ene/type Mono
+/gate/source/source_039/gps/ene/mono 140.000000 keV
+/gate/source/source_039/setActivity 81435.7005549 Bq
+/gate/source/addSource source_040
+/gate/source/source_040/gps/particle gamma
+/gate/source/source_040/gps/pos/type Point
+/gate/source/source_040/gps/pos/centre 10.00000000 10.00000000 -51.00000000 mm
+/gate/source/source_040/gps/ang/type iso
+/gate/source/source_040/gps/ene/type Mono
+/gate/source/source_040/gps/ene/mono 140.000000 keV
+/gate/source/source_040/setActivity 19359.3718497 Bq
+/gate/source/addSource source_041
+/gate/source/source_041/gps/particle gamma
+/gate/source/source_041/gps/pos/type Point
+/gate/source/source_041/gps/pos/centre 15.00000000 10.00000000 -51.00000000 mm
+/gate/source/source_041/gps/ang/type iso
+/gate/source/source_041/gps/ene/type Mono
+/gate/source/source_041/gps/ene/mono 140.000000 keV
+/gate/source/source_041/setActivity 15691.1485954 Bq
+/gate/source/addSource source_042
+/gate/source/source_042/gps/particle gamma
+/gate/source/source_042/gps/pos/type Point
+/gate/source/source_042/gps/pos/centre -15.00000000 15.00000000 -51.00000000 mm
+/gate/source/source_042/gps/ang/type iso
+/gate/source/source_042/gps/ene/type Mono
+/gate/source/source_042/gps/ene/mono 140.000000 keV
+/gate/source/source_042/setActivity 14859.8264094 Bq
+/gate/source/addSource source_043
+/gate/source/source_043/gps/particle gamma
+/gate/source/source_043/gps/pos/type Point
+/gate/source/source_043/gps/pos/centre -10.00000000 15.00000000 -51.00000000 mm
+/gate/source/source_043/gps/ang/type iso
+/gate/source/source_043/gps/ene/type Mono
+/gate/source/source_043/gps/ene/mono 140.000000 keV
+/gate/source/source_043/setActivity 15360.3478367 Bq
+/gate/source/addSource source_044
+/gate/source/source_044/gps/particle gamma
+/gate/source/source_044/gps/pos/type Point
+/gate/source/source_044/gps/pos/centre -5.00000000 15.00000000 -51.00000000 mm
+/gate/source/source_044/gps/ang/type iso
+/gate/source/source_044/gps/ene/type Mono
+/gate/source/source_044/gps/ene/mono 140.000000 keV
+/gate/source/source_044/setActivity 34255.9475427 Bq
+/gate/source/addSource source_045
+/gate/source/source_045/gps/particle gamma
+/gate/source/source_045/gps/pos/type Point
+/gate/source/source_045/gps/pos/centre 0.00000000 15.00000000 -51.00000000 mm
+/gate/source/source_045/gps/ang/type iso
+/gate/source/source_045/gps/ene/type Mono
+/gate/source/source_045/gps/ene/mono 140.000000 keV
+/gate/source/source_045/setActivity 80605.6015807 Bq
+/gate/source/addSource source_046
+/gate/source/source_046/gps/particle gamma
+/gate/source/source_046/gps/pos/type Point
+/gate/source/source_046/gps/pos/centre 5.00000000 15.00000000 -51.00000000 mm
+/gate/source/source_046/gps/ang/type iso
+/gate/source/source_046/gps/ene/type Mono
+/gate/source/source_046/gps/ene/mono 140.000000 keV
+/gate/source/source_046/setActivity 34256.3185963 Bq
+/gate/source/addSource source_047
+/gate/source/source_047/gps/particle gamma
+/gate/source/source_047/gps/pos/type Point
+/gate/source/source_047/gps/pos/centre 10.00000000 15.00000000 -51.00000000 mm
+/gate/source/source_047/gps/ang/type iso
+/gate/source/source_047/gps/ene/type Mono
+/gate/source/source_047/gps/ene/mono 140.000000 keV
+/gate/source/source_047/setActivity 15361.6056209 Bq
+/gate/source/addSource source_048
+/gate/source/source_048/gps/particle gamma
+/gate/source/source_048/gps/pos/type Point
+/gate/source/source_048/gps/pos/centre 15.00000000 15.00000000 -51.00000000 mm
+/gate/source/source_048/gps/ang/type iso
+/gate/source/source_048/gps/ene/type Mono
+/gate/source/source_048/gps/ene/mono 140.000000 keV
+/gate/source/source_048/setActivity 14860.1974842 Bq
+/gate/source/list
+/gate/random/setEngineName MersenneTwister
+/gate/random/setEngineSeed 971016
+/control/execute verbose.mac
+/gate/output/tree/enable
+/gate/output/tree/addFileName /vscratch/grp-rutaoyao/Kirtiraj/Magic Cube/mcsim/OneCubeImagingFinal/runtime/phantom/root/pose_016.root
+/gate/output/tree/hits/enable
+/gate/output/tree/addCollection Singles
+/gate/application/setTimeStart 0 s
+/gate/application/setTimeStop 10 s
+/gate/application/setTimeSlice 1 s
+/gate/application/startDAQ

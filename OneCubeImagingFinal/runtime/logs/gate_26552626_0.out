@@ -1,0 +1,9 @@
+Python 3.10.8
+Gate preflight OK: /cvmfs/soft.ccr.buffalo.edu/versions/2023.01/easybuild/software/avx512/MPI/gcc/11.2.0/openmpi/4.1.1/gate/9.4/bin/Gate; stage=calibration; shard=0/4; tasks=7
+calibration_000: completed; Singles=2525, Hits=2526, 434.2s
+calibration_004: completed; Singles=2506, Hits=2508, 444.1s
+calibration_008: completed; Singles=2326, Hits=2328, 412.6s
+calibration_012: completed; Singles=2160, Hits=2163, 436.3s
+calibration_016: completed; Singles=2087, Hits=2088, 423.1s
+calibration_020: completed; Singles=1805, Hits=1805, 422.3s
+calibration_024: completed; Singles=1815, Hits=1815, 438.5s

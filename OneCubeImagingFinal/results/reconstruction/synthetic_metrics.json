@@ -1,0 +1,19 @@
+{
+  "activity_recovery_ratio": 1.014564597663572,
+  "background_rmse_bq": 59985.715003922654,
+  "correlation": 0.116048801291994,
+  "hot_region_contrast_recovery": 0.0014672923158062397,
+  "mse_bq2": 6208279097.4880495,
+  "normalized_error": 0.7211148850709459,
+  "projection_fit": {
+    "measurement_count": 49,
+    "poisson_deviance": 60.140114275871426,
+    "residual_l2": 372.891232321314,
+    "residual_rmse_counts": 53.270176045902
+  },
+  "reconstructed_hot_to_background_contrast": 0.00792564423312825,
+  "reconstructed_total_activity_bq": 3753889.0113552166,
+  "rmse_bq": 78792.633522989,
+  "true_hot_to_background_contrast": 5.401544155687417,
+  "true_total_activity_bq": 3700000.0
+}

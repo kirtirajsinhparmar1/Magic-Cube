@@ -1,0 +1,20 @@
+{
+  "angular_coverage_map_generated": false,
+  "defined": false,
+  "onecube_input_assessment": "The acquisition translates one uncollimated bare crystal. Pose-position azimuth does not encode a projection direction, and no directional response beam is measured.",
+  "physical_pose_coordinate_extent_mm": {
+    "x": [
+      -15.0,
+      15.0
+    ],
+    "y": [
+      -15.0,
+      15.0
+    ]
+  },
+  "physical_pose_count": 49,
+  "reason": "A bare uncollimated crystal has no beam-direction encoding. Translation-pose azimuth is not a projection angle and is not used as ASCI.",
+  "reference_method": "occupied angular bins per image pixel divided by configured angular bins, after valid beam/FWHM/sensitivity filtering",
+  "separate_translation_pose_map": "results/plots/acquisition_design.png",
+  "status": "NOT PHYSICALLY APPLICABLE"
+}

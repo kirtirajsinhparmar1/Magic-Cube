@@ -1,0 +1,15 @@
+Python 3.10.8
+Gate preflight OK: /cvmfs/soft.ccr.buffalo.edu/versions/2023.01/easybuild/software/avx512/MPI/gcc/11.2.0/openmpi/4.1.1/gate/9.4/bin/Gate; stage=phantom; shard=0/4; tasks=13
+phantom_000: completed; Singles=2181, Hits=2181, 505.2s
+phantom_004: completed; Singles=2214, Hits=2215, 481.8s
+phantom_008: completed; Singles=2335, Hits=2335, 493.4s
+phantom_012: completed; Singles=2322, Hits=2325, 480.1s
+phantom_016: completed; Singles=2310, Hits=2313, 484.1s
+phantom_020: completed; Singles=2276, Hits=2278, 492.0s
+phantom_024: completed; Singles=2451, Hits=2452, 501.0s
+phantom_028: completed; Singles=2252, Hits=2254, 505.3s
+phantom_032: completed; Singles=2298, Hits=2301, 492.7s
+phantom_036: completed; Singles=2283, Hits=2284, 483.7s
+phantom_040: completed; Singles=2287, Hits=2288, 494.2s
+phantom_044: completed; Singles=2347, Hits=2350, 492.9s
+phantom_048: completed; Singles=2202, Hits=2204, 478.2s

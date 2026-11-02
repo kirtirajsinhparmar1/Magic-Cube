@@ -1,0 +1,66 @@
+{
+  "measurement_mode": "independent Gate phantom Singles by physical detector-pose exposure",
+  "phantom_gate_tasks": 49,
+  "gate_singles_total": 112540,
+  "gate_hits_total": 112636,
+  "expected_projection_counts_total": 112232.50477814929,
+  "synthetic_poisson_counts_total": 111883,
+  "synthetic_reconstruction_metrics": {
+    "mse_bq2": 6208279097.4880495,
+    "rmse_bq": 78792.633522989,
+    "normalized_error": 0.7211148850709459,
+    "correlation": 0.116048801291994,
+    "activity_recovery_ratio": 1.014564597663572,
+    "true_total_activity_bq": 3700000.0,
+    "reconstructed_total_activity_bq": 3753889.0113552166,
+    "hot_region_contrast_recovery": 0.0014672923158062397,
+    "true_hot_to_background_contrast": 5.401544155687417,
+    "reconstructed_hot_to_background_contrast": 0.00792564423312825,
+    "background_rmse_bq": 59985.715003922654,
+    "projection_fit": {
+      "measurement_count": 49,
+      "residual_l2": 372.891232321314,
+      "residual_rmse_counts": 53.270176045902,
+      "poisson_deviance": 60.140114275871426
+    }
+  },
+  "independent_gate_reconstruction_metrics": {
+    "mse_bq2": 6231592067.695798,
+    "rmse_bq": 78940.43366802463,
+    "normalized_error": 0.7224675608203832,
+    "correlation": 0.06674662819782182,
+    "activity_recovery_ratio": 1.0205669212113186,
+    "true_total_activity_bq": 3700000.0,
+    "reconstructed_total_activity_bq": 3776097.6084818793,
+    "hot_region_contrast_recovery": 0.00025018042009315684,
+    "true_hot_to_background_contrast": 5.401544155687417,
+    "reconstructed_hot_to_background_contrast": 0.001351360586021614,
+    "background_rmse_bq": 60743.71647916593,
+    "projection_fit": {
+      "measurement_count": 49,
+      "residual_l2": 308.4313168753678,
+      "residual_rmse_counts": 44.06161669648112,
+      "poisson_deviance": 41.14385601877147
+    }
+  },
+  "synthetic_mlem_iterations": 100,
+  "independent_gate_mlem_iterations": 100,
+  "reconstruction_settings": {
+    "iterations": 100,
+    "epsilon": 1e-12,
+    "initialization": "uniform over observable voxels with total equal to phantom activity",
+    "relative_change_stop": null,
+    "stop_patience": 3,
+    "post_filter_sigma_voxels": null,
+    "poisson_seed": 20261019,
+    "measurement_mode": "accepted Singles tree entries per independent physical detector pose"
+  },
+  "post_filter": "disabled",
+  "generated_plots": [
+    "results/plots/reconstruction_comparison.png",
+    "results/plots/mlem_convergence.png",
+    "results/plots/projection_comparison.png",
+    "results/plots/reconstruction_summary.png"
+  ],
+  "scientific_note": "The synthetic Poisson reconstruction uses H to generate and reconstruct its data; only the independently simulated Gate phantom vector is an experimental Monte Carlo measurement."
+}

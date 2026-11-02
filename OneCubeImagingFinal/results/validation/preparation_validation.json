@@ -1,0 +1,78 @@
+{
+  "calibration_conditions": 28,
+  "checks": [
+    {
+      "details": "all 7 sbatch submissions use quoted absolute-project Slurm paths; workers=['imaging_gate_array.slurm', 'imaging_stage.slurm']",
+      "name": "slurm_submission_scripts",
+      "passed": true
+    },
+    {
+      "details": "preparation provenance exists and makes no runtime claim",
+      "name": "preparation_provenance",
+      "passed": true
+    },
+    {
+      "details": "preparation configuration hash matches the current single imaging configuration",
+      "name": "configuration_hash",
+      "passed": true
+    },
+    {
+      "details": "all reused OneCube macro/material assets match preparation hashes",
+      "name": "frozen_baseline_unchanged",
+      "passed": true
+    },
+    {
+      "details": "voxel ordering is row-major y then x; found 49 columns",
+      "name": "image_voxel_ordering",
+      "passed": true
+    },
+    {
+      "details": "49 distinct physical detector poses map one-to-one to measurement rows",
+      "name": "physical_measurement_row_ordering",
+      "passed": true
+    },
+    {
+      "details": "28 direct Gate calibration conditions cover the complete D4 quotient grid",
+      "name": "measured_relative_offset_coverage",
+      "passed": true
+    },
+    {
+      "details": "49 independent Gate phantom exposures map in physical row order",
+      "name": "phantom_acquisition_manifest",
+      "passed": true
+    },
+    {
+      "details": "49 positive voxel sources sum to 3.7e+06 Bq and contain spatial activity variation",
+      "name": "multi_voxel_phantom_distribution",
+      "passed": true
+    },
+    {
+      "details": "all generated macros reuse frozen geometry/physics and write outputs only below OneCubeImagingFinal",
+      "name": "isolated_gate_task_macros",
+      "passed": true
+    },
+    {
+      "details": "4 workers, 4 CPUs, 32 GB aggregate memory",
+      "name": "conservative_worker_resources",
+      "passed": true
+    },
+    {
+      "details": "2,849,000,000 planned primaries (770 validated 1 s baseline exposure equivalents)",
+      "name": "planned_monte_carlo_scale",
+      "passed": true
+    },
+    {
+      "details": "report and acquisition/phantom design figures exist",
+      "name": "preparation_outputs_exist",
+      "passed": true
+    }
+  ],
+  "final_token": "ONECUBE_IMAGING_FULL_PREPARATION_PASS",
+  "measurement_bins": 49,
+  "phantom_gate_tasks": 49,
+  "production_runtime_executed": false,
+  "scientific_reconstruction_identifiable": null,
+  "software_pipeline_ready": true,
+  "spatial_voxels": 49,
+  "status": "STATIC PREPARATION PASS"
+}

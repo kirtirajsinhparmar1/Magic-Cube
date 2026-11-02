@@ -1,0 +1,186 @@
+{
+  "baseline_macro_sha256": {
+    "GATE-Macro/GateMaterials.db": "62f397b9d46a6af4c8f3f99e1b3382c4388b967253bdb501829897703b566a8b",
+    "GATE-Macro/digitizer.mac": "d4ae8a740ad183321cc28bb29cc9cbe4e943bbb41e238aef433151f27c8a76f9",
+    "GATE-Macro/geometry.mac": "9ba8540a9b70430d60c439fc9136560d4d21e42157e905288bcd41c767962832",
+    "GATE-Macro/output.mac": "b29535c4af5233fe8f0159b9e6dcc8e8cd96a62b984084e986f877d3c133ba37",
+    "GATE-Macro/physics.mac": "24e93b549a056793b6a242af4c79692ca0ec32b74d6107b7fc8486d43ee956a1",
+    "GATE-Macro/plate.mac": "129dd8280d21d49abb6d6b3dd67052f0d047c569d14182b4a65a909856333545",
+    "GATE-Macro/source.mac": "8a53ea3c329f1a57425e8842be35adf4b5d9cc31a3ee70f83f89ed7fe56bec3c",
+    "GATE-Macro/system.mac": "3c7eb224d9cd9a4b6d364108b849bfda7818a7fa2f6c4f9dd79a0a03d2d90d4d"
+  },
+  "baseline_project": "/vscratch/grp-rutaoyao/Kirtiraj/Magic Cube/mcsim/OneCube",
+  "calibration_task_count": 28,
+  "config": {
+    "acquisition": {
+      "calibration_activity_Bq": 3700000.0,
+      "calibration_exposure_s": 10.0,
+      "calibration_symmetry": "D4 lateral reflection/swap of a fixed-axis 2x2 mm square GAGG crystal; detector and source translated in homogeneous air",
+      "calibration_symmetry_enabled": true,
+      "detector_z_mm": 0.0,
+      "energy_window_keV": [
+        120.0,
+        160.0
+      ],
+      "max_relative_offset_index": 6,
+      "orientation": "fixed; no rotation",
+      "phantom_activity_total_Bq": 3700000.0,
+      "phantom_exposure_s": 10.0,
+      "pose_nx": 7,
+      "pose_ny": 7,
+      "pose_pitch_mm": 5.0,
+      "seed_base_calibration": 713000,
+      "seed_base_phantom": 971000
+    },
+    "analysis": {
+      "asci_reason": "A bare uncollimated crystal has no beam-direction encoding. Translation-pose azimuth is not a projection angle and is not used as ASCI.",
+      "asci_status": "NOT PHYSICALLY APPLICABLE",
+      "fwhm_half_max_fraction": 0.5,
+      "ji_formula": "(mean_sensitivity_cps_per_bq / mean_fwhm_mm^2) * (asci_percent / 100)",
+      "numerical_identifiability_condition_screen": 100000000.0,
+      "response_mask_fraction_of_row_peak": 0.5,
+      "svd_relative_tolerance": 1e-06
+    },
+    "baseline": {
+      "baseline_acquisition_s": 1.0,
+      "baseline_hits": 233,
+      "baseline_sensitivity_cps_per_MBq": 62.972972972972975,
+      "baseline_singles": 233,
+      "detector_center_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "detector_id": 0,
+      "detector_material": "GAGG",
+      "detector_size_mm": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "gate_working_directory": "GATE-Macro",
+      "geometry_macros": [
+        "GATE-Macro/geometry.mac",
+        "GATE-Macro/plate.mac",
+        "GATE-Macro/system.mac",
+        "GATE-Macro/physics.mac",
+        "GATE-Macro/digitizer.mac"
+      ],
+      "material_database": "GATE-Macro/GateMaterials.db",
+      "physics_macro": "GATE-Macro/physics.mac",
+      "source_activity_Bq": 3700000.0,
+      "source_energy_keV": 140.0,
+      "source_z_mm": -51.0,
+      "validated_center_surface_gap_mm": 50.0
+    },
+    "baseline_project_relative": "../OneCube",
+    "environment": {
+      "module_commands": [
+        "module load gcc/11.2.0 geant4/11.2.1 geant4-data/11.2",
+        "export GEANT4_DATA_DIR=$EBROOTGEANT4MINDATA",
+        "module load gcc/11.2.0 openmpi/4.1.1 gate/9.4 geant4-data/11.2"
+      ],
+      "python": "/user/kmparmar/venv/bin/python",
+      "python_env_policy": "invoke with env -u PYTHONPATH"
+    },
+    "image": {
+      "fov_edge_to_edge_mm": [
+        35.0,
+        35.0
+      ],
+      "nx": 7,
+      "ny": 7,
+      "plane_z_mm": -51.0,
+      "voxel_order": "row-major by y_index ascending, then x_index ascending",
+      "voxel_pitch_mm": 5.0,
+      "voxel_size_mm": [
+        5.0,
+        5.0
+      ]
+    },
+    "outputs": {
+      "primary_report": "ONECUBE_IMAGING_FINAL_REPORT.md",
+      "results_dir": "results",
+      "runtime_dir": "runtime"
+    },
+    "phantom": {
+      "background_fraction_of_reference": 0.05,
+      "hotspot_centers_mm": [
+        [
+          -10.0,
+          0.0
+        ],
+        [
+          0.0,
+          10.0
+        ],
+        [
+          10.0,
+          0.0
+        ],
+        [
+          0.0,
+          -10.0
+        ]
+      ],
+      "hotspot_relative_weights": [
+        1.0,
+        0.75,
+        1.25,
+        0.9
+      ],
+      "hotspot_sigma_mm": 3.2,
+      "pattern": "four spatially separated, independently weighted hot spots on a low uniform background",
+      "source_model": "one isotropic 140 keV point source per image voxel; per-voxel activities sum to configured total activity",
+      "total_activity_Bq": 3700000.0
+    },
+    "project_name": "OneCubeImagingFinal",
+    "reconstruction": {
+      "epsilon": 1e-12,
+      "initialization": "uniform over observable voxels with total equal to phantom activity",
+      "iterations": 100,
+      "measurement_mode": "accepted Singles tree entries per independent physical detector pose",
+      "poisson_seed": 20261019,
+      "post_filter_sigma_voxels": null,
+      "relative_change_stop": null,
+      "stop_patience": 3
+    },
+    "resources": {
+      "baseline_exposure_equivalents": 770,
+      "calibration_tasks": 28,
+      "cpus_per_worker": 1,
+      "estimated_primary_histories": 2849000000,
+      "expected_gate_invocations": 77,
+      "gate_workers": 4,
+      "memory_per_worker_gb": 8,
+      "partition": "general-compute",
+      "phantom_tasks": 49,
+      "qos": "general-compute",
+      "runtime_estimate_note": "Planning estimate from 77 tasks x 3.7 MBq x 10 s. Existing baseline records counts but no reliable elapsed-time benchmark; wall time is therefore a Slurm limit, not a claimed runtime.",
+      "walltime": "24:00:00"
+    },
+    "schema_version": 1
+  },
+  "config_sha256": "6cfd0d2f04ed6ca373deadad9d39b12d409ec5e423d59dbb355c8c8314fb088a",
+  "image_voxel_count": 49,
+  "matrix_expected_shape": [
+    49,
+    49
+  ],
+  "phantom_metadata": {
+    "activity_model": "one isotropic 140 keV point source per image voxel; per-voxel activities sum to configured total activity",
+    "background_voxel_count": 16,
+    "flatten_order": "C/row-major y then x; matches voxel_id",
+    "hot_voxel_count": 33,
+    "maximum_voxel_activity_Bq": 386316.090098273,
+    "minimum_voxel_activity_Bq": 14859.826409392197,
+    "pattern": "four spatially separated, independently weighted hot spots on a low uniform background",
+    "shape_yx": [
+      7,
+      7
+    ],
+    "total_activity_Bq": 3700000.0
+  },
+  "physical_phantom_measurement_count": 49,
+  "runtime_executed": false
+}

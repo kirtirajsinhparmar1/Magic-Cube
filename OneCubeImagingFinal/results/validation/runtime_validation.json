@@ -1,0 +1,135 @@
+{
+  "checks": [
+    {
+      "details": "28 calibration and 49 phantom task records complete",
+      "name": "all_gate_tasks_completed",
+      "passed": true
+    },
+    {
+      "details": "system, sensitivity, phantom, projection, and reconstruction arrays exist",
+      "name": "runtime_artifacts_present",
+      "passed": true
+    },
+    {
+      "details": "R, H, raw arrays expected (49, 49); R=(49, 49), H=(49, 49), raw=(49, 49)",
+      "name": "system_matrix_dimensions",
+      "passed": true
+    },
+    {
+      "details": "all runtime response, sensitivity, phantom, projection, and reconstruction arrays are finite and nonnegative",
+      "name": "runtime_arrays_finite_nonnegative",
+      "passed": true
+    },
+    {
+      "details": "sensitivity vectors/maps, masks, phantom, measurements, and reconstructions match row/voxel maps",
+      "name": "derived_dimensions",
+      "passed": true
+    },
+    {
+      "details": "H = R \u00d7 configured phantom exposure; R is cps/Bq and H is expected counts/Bq",
+      "name": "response_units_and_count_operator",
+      "passed": true
+    },
+    {
+      "details": "nonzero response rows sum to one; zero rows remain explicitly zero",
+      "name": "ppdf_normalization",
+      "passed": true
+    },
+    {
+      "details": "y_gate consists of nonnegative integer Singles counts",
+      "name": "independent_gate_measurement_counts",
+      "passed": true
+    },
+    {
+      "details": "results/fwhm/fwhm_summary.json contains only finite values or explicit nulls",
+      "name": "fwhm_finite",
+      "passed": true
+    },
+    {
+      "details": "0 valid of 49 response rows; invalid crossings retain reasons",
+      "name": "fwhm_validity_flags",
+      "passed": true
+    },
+    {
+      "details": "results/asci/asci_applicability.json contains only finite values or explicit nulls",
+      "name": "asci_finite",
+      "passed": true
+    },
+    {
+      "details": "ASCI applicability is explicitly recorded: A bare uncollimated crystal has no beam-direction encoding. Translation-pose azimuth is not a projection angle and is not used as ASCI.",
+      "name": "asci_physical_applicability",
+      "passed": true
+    },
+    {
+      "details": "results/asci/ji_result.json contains only finite values or explicit nulls",
+      "name": "ji_finite",
+      "passed": true
+    },
+    {
+      "details": "JI is numeric only when its measured sensitivity, valid FWHM, and physical ASCI inputs are defined",
+      "name": "ji_definedness",
+      "passed": true
+    },
+    {
+      "details": "results/system_matrix/information_diagnostics.json contains only finite values or explicit nulls",
+      "name": "diagnostics_finite",
+      "passed": true
+    },
+    {
+      "details": "rank, singular values, conditioning, and zero-sensitivity voxel diagnostics exist",
+      "name": "matrix_information_diagnostics",
+      "passed": true
+    },
+    {
+      "details": "results/reconstruction/synthetic_metrics.json contains only finite values or explicit nulls",
+      "name": "synthetic_metrics_finite",
+      "passed": true
+    },
+    {
+      "details": "results/reconstruction/independent_gate_metrics.json contains only finite values or explicit nulls",
+      "name": "gate_metrics_finite",
+      "passed": true
+    },
+    {
+      "details": "results/reconstruction/synthetic_mlem_history.json contains only finite values or explicit nulls",
+      "name": "synthetic_history_finite",
+      "passed": true
+    },
+    {
+      "details": "all 100 configured MLEM iterations and the initial estimate are preserved",
+      "name": "synthetic_history_iterations",
+      "passed": true
+    },
+    {
+      "details": "results/reconstruction/independent_gate_mlem_history.json contains only finite values or explicit nulls",
+      "name": "gate_history_finite",
+      "passed": true
+    },
+    {
+      "details": "all 100 configured MLEM iterations and the initial estimate are preserved",
+      "name": "gate_history_iterations",
+      "passed": true
+    },
+    {
+      "details": "system, response, FWHM, projection, reconstruction, and convergence figures are recorded and present",
+      "name": "scientific_figures_exist",
+      "passed": true
+    },
+    {
+      "details": "effective configuration, input hashes, task provenance, and preparation validation are present",
+      "name": "configuration_and_provenance",
+      "passed": true
+    }
+  ],
+  "condition_number": 3975.8806640761263,
+  "condition_number_screen": 100000000.0,
+  "identifiability_definition": "full voxel-column rank at configured SVD tolerance, no zero-sensitivity voxel, and retained-subspace condition number not exceeding configured screen; this is not a reconstruction-quality guarantee",
+  "independent_gate_measurements_complete": true,
+  "matrix_rank": 49,
+  "measurement_bins": 49,
+  "scientific_acceptance": "requires review of independent Gate reconstruction, projection residuals, spatial recovery metrics, and uncertainty; software validation alone does not establish acceptance",
+  "scientific_reconstruction_identifiable": true,
+  "software_pipeline_ready": true,
+  "spatial_voxels": 49,
+  "status": "SOFTWARE PIPELINE COMPLETE; LINEAR IDENTIFIABILITY SCREEN PASSED"
+}

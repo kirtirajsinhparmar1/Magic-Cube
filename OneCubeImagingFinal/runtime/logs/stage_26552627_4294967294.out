@@ -1,0 +1,11 @@
+{
+  "stage": "calibration_reduction",
+  "task_count": 28,
+  "singles_total_raw_counts": 59019,
+  "hits_total_raw_counts": 59067,
+  "input_root_files": 56,
+  "reduced_csv": "/vscratch/grp-rutaoyao/Kirtiraj/Magic Cube/mcsim/OneCubeImagingFinal/runtime/reduced/calibration_counts.csv",
+  "activity_units": "Bq",
+  "exposure_units": "s",
+  "response_reduction": "raw Singles entries retained; downstream rate response is n/(activity_Bq*exposure_s) in cps/Bq"
+}
